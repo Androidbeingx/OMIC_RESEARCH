@@ -1,0 +1,99 @@
+LOCUS       XM_019424274            2127 bp    mRNA    linear   MAM 05-DEC-2016
+DEFINITION  PREDICTED: Panthera pardus selectin L (SELL), mRNA.
+ACCESSION   XM_019424274
+VERSION     XM_019424274.1
+DBLINK      BioProject: PRJNA355165
+KEYWORDS    RefSeq.
+SOURCE      Panthera pardus (leopard)
+  ORGANISM  Panthera pardus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Feliformia; Felidae;
+            Pantherinae; Panthera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_017619849.1) annotated using gene prediction method: Gnomon,
+            supported by mRNA evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Version          :: Panthera pardus Annotation Release
+                                           100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 7.2
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2127
+                     /organism="Panthera pardus"
+                     /mol_type="mRNA"
+                     /isolate="Maewha"
+                     /db_xref="taxon:9691"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /tissue_type="muscle"
+     gene            1..2127
+                     /gene="SELL"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 mRNAs, 2 Proteins, and 100%
+                     coverage of the annotated genomic feature by RNAseq
+                     alignments, including 36 samples with support for all
+                     annotated introns"
+                     /db_xref="GeneID:109252111"
+     CDS             136..1266
+                     /gene="SELL"
+                     /codon_start=1
+                     /product="L-selectin"
+                     /protein_id="XP_019279819.1"
+                     /db_xref="GeneID:109252111"
+                     /translation="MSKAKVFPWKCQRAQRDSWNVFRLWVWTVLCCDFLARHGTDCWT
+                     YHYSETPMNWARARKFCQENYTDLVAIQNKGEIEYLEQMLPFSRYYYWIGIRKVGGTW
+                     TWVGTNKSLTKEAENWGHGEPNNKKSKEDCVEIYIKRAKDAGKWNDDSCHKQKIALCY
+                     TASCQPSSCSNHGECVETINNYTCNCDVGYYGPQCQFVVQCEPLEAPDLGTMDCSHPV
+                     GTFSFSSQCTFNCSKGTDLIGVEETTCGPFGNWSSLEPTCQMISCKPLMAPDLGTMDC
+                     SHPLANFSFTSTCTFNCLEGTELIGERKIICGPSGIWSSPSPICQKVDQSFSMIKEGN
+                     YNPLFIPVAVMVTAFSGLAFIIWLARRLKKGKKSRESVDDPY"
+ORIGIN      
+        1 gaaagaaagc aagccttttt ggtggcactc cacgcagcct cctgaagcac agctcaccca
+       61 gcccagccgt gggcaaggac ccagacgccc tggtgctgag ttgagaggct ggagtccgga
+      121 agaactaaag aagggatgag caaagccaag gtatttccat ggaaatgtca gagagctcag
+      181 agggactcat ggaatgtctt caggttgtgg gtctggacag tgctctgttg tgatttcctt
+      241 gcacgtcacg ggaccgactg ctggacttac cactattctg aaacacccat gaactgggca
+      301 agggctagaa agttctgcca agaaaattac acagatttag ttgccatcca aaacaagggg
+      361 gagattgaat acctagagca gatgcttccc ttcagccgct attactactg gataggaatc
+      421 cggaaggtag ggggaacatg gacttgggtg ggaaccaaca agtctcttac caaagaagca
+      481 gagaactggg gacatggaga gccgaacaac aagaagtcca aagaagactg tgtggagatt
+      541 tacatcaaga gggccaaaga cgcgggaaaa tggaatgatg attcctgcca caagcagaag
+      601 atagccctct gttacacagc ttcttgtcag ccctcatcat gcagcaacca tggagaatgt
+      661 gtggaaacca tcaataatta tacctgcaac tgtgatgttg ggtactatgg gccccagtgt
+      721 caatttgtgg ttcagtgtga gcctctggag gcccctgatc tgggtaccat ggactgtagt
+      781 caccctgtgg gaaccttcag cttcagctct cagtgtacct tcaactgctc taagggcaca
+      841 gacctcattg gagttgagga aaccacttgt ggaccttttg gaaactggtc atctctagaa
+      901 ccaacctgtc aaatgatttc ctgtaagcct ctaatggcac ccgatctggg aaccatggac
+      961 tgtagtcacc ccctggccaa cttcagcttt acatccacat gtaccttcaa ctgcttagaa
+     1021 ggaactgagt taatcgggga gagaaaaatt atttgtggac catcgggaat ctggtcaagc
+     1081 cctagtccaa tatgccaaaa agtggaccag agtttctcaa tgatcaaaga gggtaactat
+     1141 aaccctctct tcattccggt ggcagtcatg gttactgctt tttctgggtt ggcatttatc
+     1201 atttggctgg caagaagatt gaagaaaggt aaaaagtctc gggaaagcgt ggatgatccg
+     1261 tattaaagca ccctctgtaa atgaaaattc tcgggatctt aacacgtcac cggatccccc
+     1321 aaatccctcc ctgaaaagtt atcgcgcggt ggtgtctcct gccctgaaga tgaatgtgtc
+     1381 gccctcagtg cacctggaaa gatctctgac gaaccggcag cagtttctgc tccctttgtg
+     1441 cccctccccc acccccttgt ggtttatata gcgcactctg ttactctgtt tttcgtggag
+     1501 aaacgagatc acagcggggg agaagattgc tggggaatat aaagatgccc tgttttgctc
+     1561 tctgtcttgc acctacaggc tcggttttga tgcaaatcac attttatctc cagtctcctg
+     1621 taggggtaca tccttagacg taagttcatc aaattgatgt tgtcctcgct ttccaacggc
+     1681 agcaaagtag tggggttctg ccccgaacag aaaaggtcct gccacgtgca cggtagcctc
+     1741 acctcctcta taaatggagg ccatcctctt caactgcctc cggcctcccc caccttcttc
+     1801 ggccatcccc tcttctcagt tggctggttt ccacacatag catctcatgg gcaccaaacg
+     1861 aaaagagaga ggagagagac agcgagacta cactggtttt ttggcttttg gttttactcg
+     1921 ttttattaga tccaccgaaa catcttgtac tcggtgcctt ttaaaaaatg accactatat
+     1981 ttttattaaa gaaacatccc ccagaaacat caccagaaag actagtcttt catactagtc
+     2041 ttgtcacatc tagtccaaac ctgtggcctc ctgctgcaag attagtctag gttttgtgct
+     2101 taaatagtct tttttttttt ttttaaa
+//
+

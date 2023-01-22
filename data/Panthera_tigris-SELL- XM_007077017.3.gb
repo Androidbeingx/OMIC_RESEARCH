@@ -1,0 +1,106 @@
+LOCUS       XM_007077017            2148 bp    mRNA    linear   MAM 19-AUG-2021
+DEFINITION  PREDICTED: Panthera tigris selectin L (SELL), mRNA.
+ACCESSION   XM_007077017
+VERSION     XM_007077017.3
+DBLINK      BioProject: PRJNA751894
+KEYWORDS    RefSeq.
+SOURCE      Panthera tigris (tiger)
+  ORGANISM  Panthera tigris
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Feliformia; Felidae;
+            Pantherinae; Panthera.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_056678.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Aug 13, 2021 this sequence version replaced XM_007077017.2.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Panthera tigris Annotation Release
+                                           102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2148
+                     /organism="Panthera tigris"
+                     /mol_type="mRNA"
+                     /isolate="Pti1"
+                     /db_xref="taxon:9694"
+                     /chromosome="F3"
+                     /sex="female"
+                     /cell_type="Fibroblast"
+                     /tissue_type="Fibroblasts"
+                     /dev_stage="adult"
+     gene            1..2148
+                     /gene="SELL"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 8 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:102965363"
+     CDS             157..1287
+                     /gene="SELL"
+                     /codon_start=1
+                     /product="L-selectin"
+                     /protein_id="XP_007077079.1"
+                     /db_xref="GeneID:102965363"
+                     /translation="MSKAKVFPWKCQRAQRDSWNVFRLWVWTVLCCDFLARHGTDCWT
+                     YHYSETPMNWARARKFCQEDYTDLVAIQNKGEIEYLEQMLPFSRYYYWIGIRKVGGTW
+                     TWVGTNKSLTKEAENWGHGEPNNKKSKEDCVEIYIKRAKDAGKWNDDSCHKQKIALCY
+                     TASCQPSSCSNHGECVETINNYTCNCDVGYYGPQCQFVVQCEPLEAPDLGTMDCSHPV
+                     GTFSFSSQCTFNCSKGTDLIGVEETTCGPFGNWSSLEPTCQMISCKPLMAPDLGTMDC
+                     SHPLANFSFTSTCTFNCLEGTELIGERKIICGPSGIWSSPSPICQKVDQSFSMIKEGN
+                     YNPLFIPVAVMVTAFSGLAFIIWLARRLKKGKKSRESVDDPY"
+     polyA_site      2148
+                     /gene="SELL"
+                     /experiment="COORDINATES: polyA evidence [ECO:0006239]"
+ORIGIN      
+        1 tgtgagactg agtcagggaa atgaaagaaa gcaagccttt tggtggcact ccacgcagcc
+       61 tcctgaagca cagctcgccc agcccagccg tgggcaagga cccagacgcc ctggtgctga
+      121 gttgagaggc tggagtccgg aagaactaaa gaagggatga gcaaagccaa ggtatttcca
+      181 tggaaatgtc agagagccca gagggactca tggaatgtct tcaggttgtg ggtctggaca
+      241 gtgctctgtt gtgatttcct tgcacgtcac gggaccgact gctggactta ccactattct
+      301 gaaacaccca tgaactgggc aagggctaga aagttctgcc aagaagatta cacagattta
+      361 gttgccatcc aaaacaaggg ggagattgaa tacctagagc agatgcttcc cttcagccgc
+      421 tattactact ggataggaat ccggaaggta gggggaacat ggacttgggt gggaaccaac
+      481 aagtctctta ccaaagaagc agagaactgg ggacatggag agccgaacaa caagaagtcc
+      541 aaagaagact gtgtggagat ttacatcaag agggccaaag acgcgggaaa atggaatgat
+      601 gattcctgcc acaagcagaa gatagccctc tgttacacag cttcttgtca gccctcatca
+      661 tgcagcaacc atggagaatg tgtggaaacc atcaataatt atacctgcaa ctgtgatgtt
+      721 gggtactatg ggccccagtg tcaatttgtg gttcagtgtg agcctctgga ggcccctgat
+      781 ctgggtacca tggactgtag tcaccctgtg ggaaccttca gcttcagctc tcagtgtacc
+      841 ttcaactgct ctaagggcac agacctcatt ggagttgagg aaaccacttg tggacctttc
+      901 ggaaactggt catctctaga accaacctgt caaatgattt cctgtaagcc tctaatggca
+      961 cccgatctgg gaaccatgga ctgtagtcac cccctggcca acttcagctt tacatccaca
+     1021 tgtaccttca actgcttgga aggaactgag ttaatcgggg agagaaaaat tatttgtgga
+     1081 ccatcgggaa tctggtcaag ccctagtcca atatgccaaa aagtggacca gagtttctca
+     1141 atgatcaaag agggtaacta taaccctctc ttcattccag tggcagtcat ggttactgct
+     1201 ttttctgggt tggcatttat catttggctg gcaagaagat tgaagaaagg taaaaagtct
+     1261 cgggaaagcg tggatgatcc gtattaaagc accctctgta aatgaaaatt ctcgggatcc
+     1321 taacgcgtca ccggatcccc caaatccctc cctgaaaagt tatcgcgcgg tggtgtctcc
+     1381 tgccctgaag atgaatgtgt cgccctcagt gcacctggaa agatctctga ggaaccggca
+     1441 gcagtttctg ctccctttgc gcccctcccc cacccccttg tggtttatat agcgcactct
+     1501 gttactctgt ttttcgtgga gaaacgagat cacggcgggg gagaagattg ctggggaata
+     1561 taaagatgcc ctgttttgct ctctgtcttg cacctacagg ctcggttttg atgcaaatca
+     1621 cattttatct ccagtctcct gtaggggtac atccttagac ataagttcat caaattgatg
+     1681 ttgtcctcgc tttccaaggg cagcaaagta gtggggttct gcccgaaaca gaaaaggtcc
+     1741 tgccacgtgc acggtagcct cacctcctct gtaaatggag gccatcctct tcaactgcct
+     1801 ccggcctccc ccaccttctt cggccatccc ctcttctcag ttggctgatt tccacacata
+     1861 gcatctcatg ggcaccaaac gaaaagagag aggagagaga cagcgagact acactggttt
+     1921 tttggctttt ggttttactc gttttattag atccaccgaa acatcttgta ctcggtgcct
+     1981 tttaaaaaat gaccactata tttttattaa agaaacatcc cccagaaaca tcaccagaaa
+     2041 gactagtctt tcatactagt cttgtcacag ctagtccaaa cctgtggcct cctgctgcaa
+     2101 gattagtcta ggttttgtgc ttaaatagtc tttttttttt tttttaaa
+//
+
