@@ -13,6 +13,7 @@
 5. Pan paniscus (pygmy chimpanzee) * more related to humans 
 
 * Tottally different species interesting to see the relation
+
 Andrea: Would be interesting to see all diferent families leopard -> cheetah, 5 + cat would be 6 species like 2 each one.
 
 # Selected shared gene:
