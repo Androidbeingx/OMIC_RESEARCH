@@ -6,10 +6,14 @@
 - Felis catus (domestic cat)
 
 # Selected related species (write here any of your suggestions):
-1. Panthera pardus (leopard)
+1. Panthera pardus (leopard) / Acinonyx jubatus (cheetah)
 2. Panthera tigris (tiger)
 3. Puma concolor (puma)
-4. Vulpes vulpes (red fox)
+4. Vulpes vulpes (red fox) *
+5. Pan paniscus (pygmy chimpanzee) * more related to humans 
+
+* Tottally different species interesting to see the relation
+Andrea: Would be interesting to see all diferent families leopard -> cheetah, 5 + cat would be 6 species like 2 each one.
 
 # Selected shared gene:
 - selectin L
