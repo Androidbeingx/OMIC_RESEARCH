@@ -1,0 +1,192 @@
+LOCUS       NP_001273579             335 aa            linear   PRI 29-JAN-2023
+DEFINITION  all-trans-retinol dehydrogenase [NAD(+)] ADH1B isoform 2 [Homo
+            sapiens].
+ACCESSION   NP_001273579 XP_005262787
+VERSION     NP_001273579.1
+DBSOURCE    REFSEQ: accession NM_001286650.2
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 335)
+  AUTHORS   Chang TG, Yen TT, Wei CY, Hsiao TH and Chen IC.
+  TITLE     Impacts of ADH1B rs1229984 and ALDH2 rs671 polymorphisms on risks
+            of alcohol-related disorder and cancer
+  JOURNAL   Cancer Med 12 (1), 747-759 (2023)
+   PUBMED   35670037
+  REMARK    GeneRIF: Impacts of ADH1B rs1229984 and ALDH2 rs671 polymorphisms
+            on risks of alcohol-related disorder and cancer.
+REFERENCE   2  (residues 1 to 335)
+  AUTHORS   Hoang YTT, Nguyen YT, Nguyen HD, Le ATP, Bui HTT, Vu NP and Nguyen
+            HH.
+  TITLE     Single Nucleotide Polymorphisms of ADH1B, ADH1C and ALDH2 Genes in
+            235 People Living in Thai Nguyen Province of Vietnam
+  JOURNAL   Asian Pac J Cancer Prev 23 (12), 4243-4251 (2022)
+   PUBMED   36580007
+  REMARK    GeneRIF: Single Nucleotide Polymorphisms of ADH1B, ADH1C and ALDH2
+            Genes in 235 People Living in Thai Nguyen Province of Vietnam.
+            Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 335)
+  AUTHORS   Tajiri A, Ishihara R, Sakurai H, Nakamura T, Tani Y, Inoue T,
+            Matsueda K, Miyake M, Waki K, Fukuda H, Shichijo S, Maekawa A,
+            Kanesaka T, Yamamoto S, Takeuchi Y, Higashino K, Uedo N, Michida T
+            and Matsunaga T.
+  TITLE     Clinical features of superficial esophagus squamous cell carcinoma
+            according to alcohol-degrading enzyme ADH1B and ALDH2 genotypes
+  JOURNAL   J Gastroenterol 57 (9), 630-639 (2022)
+   PUBMED   35788888
+  REMARK    GeneRIF: Clinical features of superficial esophagus squamous cell
+            carcinoma according to alcohol-degrading enzyme ADH1B and ALDH2
+            genotypes.
+REFERENCE   4  (residues 1 to 335)
+  AUTHORS   Zaso MJ, Kim J, Desalu JM, Goodhines PA, Marciano MA and Park A.
+  TITLE     Racial/ethnic discrimination, ADH1B*3, and coping-motivated
+            drinking among Black college students
+  JOURNAL   Am J Addict 31 (5), 415-422 (2022)
+   PUBMED   35748313
+  REMARK    GeneRIF: Racial/ethnic discrimination, ADH1B*3, and
+            coping-motivated drinking among Black college students.
+REFERENCE   5  (residues 1 to 335)
+  AUTHORS   Barati S, Fabrizio C, Strafella C, Cascella R, Caputo V, Megalizzi
+            D, Peconi C, Mela J, Colantoni L, Caltagirone C, Termine A and
+            Giardina E.
+  TITLE     Relationship between Nutrition, Lifestyle, and Neurodegenerative
+            Disease: Lessons from ADH1B, CYP1A2 and MTHFR
+  JOURNAL   Genes (Basel) 13 (8), 1498 (2022)
+   PUBMED   36011409
+  REMARK    GeneRIF: Relationship between Nutrition, Lifestyle, and
+            Neurodegenerative Disease: Lessons from ADH1B, CYP1A2 and MTHFR.
+            Review article
+            Publication Status: Online-Only
+REFERENCE   6  (residues 1 to 335)
+  AUTHORS   Hurley TD, Bosron WF, Hamilton JA and Amzel LM.
+  TITLE     Structure of human beta 1 beta 1 alcohol dehydrogenase: catalytic
+            effects of non-active-site substitutions
+  JOURNAL   Proc Natl Acad Sci U S A 88 (18), 8149-8153 (1991)
+   PUBMED   1896463
+REFERENCE   7  (residues 1 to 335)
+  AUTHORS   Winter LA, Stewart MJ, Shean ML, Dong Y, Poellinger L, Okret S,
+            Gustafsson JA and Duester G.
+  TITLE     A hormone response element upstream from the human alcohol
+            dehydrogenase gene ADH2 consists of three tandem glucocorticoid
+            receptor binding sites
+  JOURNAL   Gene 91 (2), 233-240 (1990)
+   PUBMED   2210383
+REFERENCE   8  (residues 1 to 335)
+  AUTHORS   Stewart MJ, McBride MS, Winter LA and Duester G.
+  TITLE     Promoters for the human alcohol dehydrogenase genes ADH1, ADH2, and
+            ADH3: interaction of CCAAT/enhancer-binding protein with elements
+            flanking the ADH2 TATA box
+  JOURNAL   Gene 90 (2), 271-279 (1990)
+   PUBMED   2169444
+REFERENCE   9  (residues 1 to 335)
+  AUTHORS   Carr LG and Edenberg HJ.
+  TITLE     cis-acting sequences involved in protein binding and in vitro
+            transcription of the human alcohol dehydrogenase gene ADH2
+  JOURNAL   J Biol Chem 265 (3), 1658-1664 (1990)
+   PUBMED   2295648
+REFERENCE   10 (residues 1 to 335)
+  AUTHORS   Lange,L.G., Sytkowski,A.J. and Vallee,B.L.
+  TITLE     Human liver alcohol dehydrogenase: purification, composition, and
+            catalytic features
+  JOURNAL   Biochemistry 15 (21), 4687-4693 (1976)
+   PUBMED   9982
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AK301018.1, AF153821.1,
+            BC033009.2, AC097530.3 and BU687181.1.
+            
+            On Nov 13, 2013 this sequence version replaced XP_005262787.1.
+            
+            Summary: The protein encoded by this gene is a member of the
+            alcohol dehydrogenase family. Members of this enzyme family
+            metabolize a wide variety of substrates, including ethanol,
+            retinol, other aliphatic alcohols, hydroxysteroids, and lipid
+            peroxidation products. This encoded protein, consisting of several
+            homo- and heterodimers of alpha, beta, and gamma subunits, exhibits
+            high activity for ethanol oxidation and plays a major role in
+            ethanol catabolism. Three genes encoding alpha, beta and gamma
+            subunits are tandemly organized in a genomic segment as a gene
+            cluster. Two transcript variants encoding different isoforms have
+            been found for this gene. [provided by RefSeq, Nov 2013].
+            
+            Transcript Variant: This variant (2) contains an alternate exon in
+            the 5' end and uses a downstream start codon compared to variant 1.
+            The resulting isoform (2) is shorter at the N-terminus compared to
+            isoform 1.
+            
+            Sequence Note: This RefSeq record was created from transcript and
+            genomic sequence data to make the sequence consistent with the
+            reference genome assembly. The genomic coordinates used for the
+            transcript record were based on transcript alignments.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: AK301018.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMEA2162895, SAMN03267776
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..335
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="4"
+                     /map="4q23"
+     Protein         1..335
+                     /product="all-trans-retinol dehydrogenase [NAD(+)] ADH1B
+                     isoform 2"
+                     /EC_number="1.1.1.105"
+                     /note="ADH, beta subunit; alcohol dehydrogenase 2 (class
+                     I), beta polypeptide; aldehyde reductase; alcohol
+                     dehydrogenase subunit beta; epididymis secretory protein
+                     Li 117; all-trans-retinol dehydrogenase [NAD(+)] ADH1B"
+                     /calculated_mol_wt=35262
+     Region          1..335
+                     /region_name="alcohol_DH_class_I_II_IV"
+                     /note="class I, II, IV alcohol dehydrogenases; cd08299"
+                     /db_xref="CDD:176259"
+     Site            order(7,28,135)
+                     /site_type="other"
+                     /note="catalytic Zn binding site [ion binding]"
+                     /db_xref="CDD:176259"
+     Site            order(8..9,135,139,160..164,184..185,189,229..230,
+                     234..235,253..254,278..280,330)
+                     /site_type="other"
+                     /note="NAD binding site [chemical binding]"
+                     /db_xref="CDD:176259"
+     Site            order(9,28,54,77,102,255)
+                     /site_type="other"
+                     /note="substrate binding site [chemical binding]"
+                     /db_xref="CDD:176259"
+     Site            order(58..59,61,64,72)
+                     /site_type="other"
+                     /note="structural Zn binding site [ion binding]"
+                     /db_xref="CDD:176259"
+     Site            order(62..63,66,71,221..222,233,246..247,252..253,
+                     261..266,269..279)
+                     /site_type="other"
+                     /note="dimer interface [polypeptide binding]"
+                     /db_xref="CDD:176259"
+     CDS             1..335
+                     /gene="ADH1B"
+                     /gene_synonym="ADH2; HEL-S-117"
+                     /coded_by="NM_001286650.2:313..1320"
+                     /note="isoform 2 is encoded by transcript variant 2"
+                     /db_xref="CCDS:CCDS68761.1"
+                     /db_xref="GeneID:125"
+                     /db_xref="HGNC:HGNC:250"
+                     /db_xref="MIM:103720"
+ORIGIN      
+        1 mvavgichtd dhvvsgnlvt plpvilghea agivesvgeg vttvkpgdkv iplftpqcgk
+       61 crvcknpesn yclkndlgnp rgtlqdgtrr ftcrgkpihh flgtstfsqy tvvdenavak
+      121 idaasplekv cligcgfstg ygsavnvakv tpgstcavfg lggvglsavm gckaagaari
+      181 iavdinkdkf akakelgate cinpqdykkp iqevlkemtd ggvdfsfevi grldtmmasl
+      241 lccheacgts vivgvppasq nlsinpmlll tgrtwkgavy ggfkskegip klvadfmakk
+      301 fsldalithv lpfekinegf dllhsgksir tvltf
+//
+
