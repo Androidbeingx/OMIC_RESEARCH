@@ -45,23 +45,24 @@ def __generate_query_from_args(
         - filter
     """
 
-    search_query: str = f""
+    # search_query: str = f""
+    search_query: str = f'alcohol dehydrogenase[Protein Name] AND "Drosophila melanogaster"[Organism] AND refseq[filter]'
 
-    if gene_symbol != "" and gene_full_name != "":
-        raise ValueError("""Can't use both "gene_symbol" and "gene_full_name"!""")
-    elif gene_symbol == "" and gene_full_name == "":
-        raise ValueError(
-            """Both "gene_symbol" and "gene_full_name" have empty values! Must use one of them!"""
-        )
-    elif gene_symbol != "":
-        search_query += f"{gene_symbol}[Gene]"
-    elif gene_full_name != "":
-        search_query += f"{gene_full_name} gene"
+    # if gene_symbol != "" and gene_full_name != "":
+    #     raise ValueError("""Can't use both "gene_symbol" and "gene_full_name"!""")
+    # elif gene_symbol == "" and gene_full_name == "":
+    #     raise ValueError(
+    #         """Both "gene_symbol" and "gene_full_name" have empty values! Must use one of them!"""
+    #     )
+    # elif gene_symbol != "":
+    #     search_query += f"{gene_symbol}[Gene]"
+    # elif gene_full_name != "":
+    #     search_query += f"{gene_full_name} gene"
 
-    search_query += f" AND {species}[Organism]"
+    # search_query += f" AND {species}[Organism]"
 
-    if filter != "":
-        search_query += search_query + f" AND {filter} [Filter]"
+    # if filter != "":
+    #     search_query += search_query + f" AND {filter} [Filter]"
 
     return search_query
 
@@ -114,7 +115,7 @@ def download_gene_files(
     gene: str = __assign_gene(gene_symbol, gene_full_name)
 
     # Search for the gene in the NCBI database
-    with Entrez.esearch(db="nucleotide", term=search_query) as handle:
+    with Entrez.esearch(db="protein", term=search_query) as handle:
         search_results: SearchResult = dict(Entrez.read(handle))  # type: ignore
 
     # Check if there are any search results
@@ -122,35 +123,38 @@ def download_gene_files(
         print("No results found for the given gene and species.")
         return
 
+
+
     # Fetch the first result and download the FASTA and Genbank files
     gb_result = Entrez.efetch(
-        db="nucleotide", id=search_results["IdList"][0], rettype="gb", retmode="text"
+        db="protein", id=search_results["IdList"][0], rettype="gb", retmode="text"
     )
+    print(gb_result.read())
 
     fasta_result = Entrez.efetch(
-        db="nucleotide", id=search_results["IdList"][0], rettype="fasta", retmode="text"
+        db="protein", id=search_results["IdList"][0], rettype="fasta", retmode="text"
     )
 
-    def __save_output(
-        output_dir: str, gene: str, content: TextIO, file_ext: str
-    ) -> None:
-        # Save the files to the local system
-        if not os.path.exists(output_dir):
-            os.mkdir(output_dir)
+    # def __save_output(
+    #     output_dir: str, gene: str, content: TextIO, file_ext: str
+    # ) -> None:
+    #     # Save the files to the local system
+    #     if not os.path.exists(output_dir):
+    #         os.mkdir(output_dir)
 
-        file_name: str = f"{gene.lower().replace(' ','_')}-{species.lower().replace(' ','_')}.{file_ext.strip('.')}"
-        with open(os.path.join("output", file_name), "w") as f:
-            f.write(content.read())
+    #     file_name: str = f"{gene.lower().replace(' ','_')}-{species.lower().replace(' ','_')}.{file_ext.strip('.')}"
+    #     with open(os.path.join("output", file_name), "w") as f:
+    #         f.write(content.read())
 
-    # Write genbank.
-    __save_output("output", gene, gb_result, "gb")
+    # # Write genbank.
+    # __save_output("output", gene, gb_result, "gb")
 
-    # Write fasta.
-    __save_output("output", gene, fasta_result, "fasta")
+    # # Write fasta.
+    # __save_output("output", gene, fasta_result, "fasta")
 
-    print(
-        f"FASTA and Genbank files for {gene} in {species} are saved to the output directory."
-    )
+    # print(
+    #     f"FASTA and Genbank files for {gene} in {species} are saved to the output directory."
+    # )
 
 
 if __name__ == "__main__":
