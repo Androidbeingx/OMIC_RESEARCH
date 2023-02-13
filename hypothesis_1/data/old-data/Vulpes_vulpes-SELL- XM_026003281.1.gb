@@ -1,0 +1,85 @@
+LOCUS       XM_026003281            1360 bp    mRNA    linear   MAM 30-JUL-2018
+DEFINITION  PREDICTED: Vulpes vulpes selectin L (SELL), mRNA.
+ACCESSION   XM_026003281
+VERSION     XM_026003281.1
+DBLINK      BioProject: PRJNA482864
+KEYWORDS    RefSeq.
+SOURCE      Vulpes vulpes (red fox)
+  ORGANISM  Vulpes vulpes
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Caniformia; Canidae;
+            Vulpes.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020356480.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Vulpes vulpes Annotation Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1360
+                     /organism="Vulpes vulpes"
+                     /mol_type="mRNA"
+                     /strain="TameXAggressive cross"
+                     /db_xref="taxon:9627"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="blood"
+                     /dev_stage="adult"
+     gene            1..1360
+                     /gene="SELL"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 10 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 1 sample with support for all annotated introns"
+                     /db_xref="GeneID:112923454"
+     CDS             96..1214
+                     /gene="SELL"
+                     /codon_start=1
+                     /product="L-selectin"
+                     /protein_id="XP_025859066.1"
+                     /db_xref="GeneID:112923454"
+                     /translation="MIFPWKCQSAQRCSWNVFKFWVWTVLYFDFLAHHGTNCWTYHHS
+                     EKPMNWAKARRFCQANYTDLVAIQNKGEIEYLQTTLPFSPTYYWIGIRKVGGIWTWVG
+                     TNKSLTREAENWGVGEPNNKKSKEDCVEIYIKRTRDAGKWNDDSCFKQKIALCYTASC
+                     QPSSCGNHGECVETINNYTCNCDVGYYGPQCQFVIQCEPLEAPDLGTMDCSHPLGDFS
+                     FTSTCTFNCSMGTDLIGIEETTCGPFGNWSSQEPTCQVIQCVPLEAPDLGTMDCSHTL
+                     GNFSFTSTCTFNCSEGTELIGEKETICQSSRIWSSPKPICQKVDRSFSMIKEGDYNPL
+                     FIPVAVMVTAFAGLAFIIWLARRLKKGKRSQKSMDDPY"
+ORIGIN      
+        1 gcacagcaca cccagctgtg ggcaaggagc cagacacctt ggtgctgagt tcacaggctg
+       61 aagtccagaa gaactaaaga aggaagaaca aagctatgat atttccatgg aaatgtcaga
+      121 gcgctcagag gtgctcatgg aatgtcttca agttttgggt ctggacagtg ctctattttg
+      181 atttccttgc acatcatgga accaactgct ggacttacca ccattctgaa aaacccatga
+      241 actgggcaaa ggctagaagg ttctgtcaag caaattacac agatttagtt gccatacaaa
+      301 acaaggggga aattgaatac ctgcagacga cacttccctt cagccccact tactactgga
+      361 taggcatccg gaaggtaggg gggatatgga cttgggtagg aaccaacaag tctctaacca
+      421 gagaagcaga gaactgggga gttggagagc ctaacaacaa aaagtccaaa gaggactgtg
+      481 tggagatcta catcaagagg accagagatg caggaaagtg gaatgatgac tcctgcttca
+      541 aacaaaagat agccctctgt tacacagctt cttgtcagcc ctcgtcatgt ggcaaccacg
+      601 gagaatgtgt ggaaaccatc aataactaca cctgtaactg tgatgtgggc tactatgggc
+      661 cccagtgtca attcgtgatt cagtgtgagc ctttggaggc ccctgatttg gggaccatgg
+      721 actgtagtca ccccttgggg gacttcagct ttacctccac ctgcaccttc aattgctcta
+      781 tggggacaga cctcattggg attgaggaaa ccacttgtgg accttttgga aactggtcat
+      841 ctcaagaacc aacctgtcaa gtaattcaat gtgtgccttt ggaggcccct gatttgggga
+      901 ccatggactg tagtcacacc ctggggaact tcagctttac ctccacttgc acctttaact
+      961 gctcagaagg aaccgaacta attggggaga aggaaactat ttgccaatca tctagaatct
+     1021 ggtcaagccc taaaccaata tgtcaaaaag tggacaggag tttctcaatg atcaaggagg
+     1081 gtgactataa ccctctcttc attccggtgg cagtcatggt tactgctttt gctgggttgg
+     1141 catttatcat ttggctggca agaagattaa agaaaggtaa aagatctcag aaaagcatgg
+     1201 atgatccgta ttaaagcacc ttctgtgaaa gaaaattctt gggaaactta ctcaagtgtc
+     1261 cctggatgct tcaaatccct ccctcaatag tagtacgtgg tggtgtctcc tacattgaag
+     1321 atggagtgcg tctctttcag cacatctgga aagatttcaa
+//
+
