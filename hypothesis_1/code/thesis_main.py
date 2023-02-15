@@ -81,7 +81,7 @@ def get_alignment_scores() -> dict:
 
 def main() -> None:
 
-    download_fasta_and_genbank()
+    # download_fasta_and_genbank()
     alignment_scores: AlignmentScores = get_alignment_scores()
 
 

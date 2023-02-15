@@ -6,7 +6,7 @@ from Bio            import SeqIO
 from Bio.Seq        import Seq
 from Bio.SeqRecord  import SeqRecord
 from Bio.SeqFeature import SeqFeature
-from Bio.Align      import PairwiseAligner, substitution_matrices
+from Bio.Align      import PairwiseAligner, substitution_matrices, PairwiseAlignments
 
 from Bio.Align.substitution_matrices import Array
 
@@ -60,7 +60,18 @@ def use_substitution_matrix(prot1: str, prot2: str) -> float:
     # This invalidates the match, mismatch and gap scores.
     aligner.substitution_matrix = blosum62_matrix
 
-    # Align using the matrix
-    score: float = aligner.score(prot1,prot2)
+    alignment: PairwiseAlignments = aligner.align(prot1, prot2)
+
+    score: float = alignment.score
+
+    # Calc. the max score can be achived by the this alignment.
+    # (Align the first seq. with itself.)
+    max_score: float = aligner.score(prot1,prot1)
+
+    # Calc. the alignment score as a percentage.
+    percent_identity: float = (alignment.score / max_score) * 100
+
+    print(percent_identity)
+
     return score
 
