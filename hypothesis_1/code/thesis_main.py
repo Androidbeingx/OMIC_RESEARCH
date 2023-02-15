@@ -142,6 +142,8 @@ def main() -> None:
 
     # Define the NCBI queries for each gene of interest
     queries: dict[FileName, NCBIQuery] = {
+        "alcohol_dehydrogenase-drosophila_persimilis": 'alcohol dehydrogenase[Protein Name] AND "Drosophila persimilis"[Organism] AND refseq[filter]',
+        "alcohol_dehydrogenase-drosophila_guanche": 'alcohol dehydrogenase[Protein Name] AND "Drosophila guanche"[Organism] AND refseq[filter]',
         "alcohol_dehydrogenase-drosophila_melanogaster": 'alcohol dehydrogenase[Protein Name] AND "Drosophila melanogaster"[Organism] AND refseq[filter]',
         "alcohol_dehydrogenase-drosophila_simulans": 'alcohol dehydrogenase[Protein Name] AND "Drosophila simulans"[Organism] AND refseq[filter]',
         "alcohol_dehydrogenase-drosophila_sechellia": 'alcohol dehydrogenase[Protein Name] AND "Drosophila sechellia"[Organism] AND refseq[filter]',
@@ -155,28 +157,28 @@ def main() -> None:
 
     # These paths are for testing. Simply avoiding the unnecessary repeated downloads.
     # ==============================================================================
-    fasta_paths: tuple[str, ...] = (
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-homo_sapiens.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_teissieri.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_suzukii.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_ananassae.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_erecta.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_yakuba.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_sechellia.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_simulans.fasta",
-        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_melanogaster.fasta"
-    )
+    # fasta_paths: tuple[str, ...] = (
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-homo_sapiens.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_teissieri.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_suzukii.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_ananassae.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_erecta.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_yakuba.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_sechellia.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_simulans.fasta",
+    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_melanogaster.fasta"
+    # )
     # ==============================================================================
 
     # # Download the genbank and fasta files of each first result / query.
-    # paths: list[str] = download_fasta_and_genbank(queries)
+    paths: list[str] = download_fasta_and_genbank(queries)
 
     # # Extract the paths for only the fasta files.
-    # fasta_paths: list[str] = filter_fasta_paths(paths)
+    fasta_paths: list[str] = filter_fasta_paths(paths)
 
     # Get alignment results.
-    alignments: Alignments = get_alignments(fasta_paths)
-    alignment_paths: list[str] = save_alignments_as_files(alignments, '../data/alignments')
+    # alignments: Alignments = get_alignments(fasta_paths)
+    # alignment_paths: list[str] = save_alignments_as_files(alignments, '../data/alignments')
 
     # This is for the end!!!
     # Leave it commented for now.
