@@ -1,0 +1,28 @@
+GENE NAME: alcohol dehydrogenase
+TAXONOMY NAME 1: Drosophila yakuba
+TAXONOMY NAME 2: Drosophila melanogaster
+TYPE: PROTEIN
+
+target            0 MPLRLS-TIALLKRTPLLLVQKLKAAQPTRTLLHSTTTRNLVPFLGDDSCVFSNKAIIRH
+                  0 |----|-|--|---|------------------------|--------------|-----
+query             0 M----SFT--L---T------------------------N--------------K-----
+
+target           59 GGSQCDQKEAFSLSNKNVIFVAGLGGIGLDTSKELVKRDLKNLVILDRIKNPAAIAELKK
+                 60 --------------|--||||||||||||||||||.|||||||||||||.|||||||||-
+query             8 --------------N--VIFVAGLGGIGLDTSKELLKRDLKNLVILDRIENPAAIAELK-
+
+target          119 -INPKVA-ITFYPYDVTVPIAETTELLKC-IFSRLKTVDILINGAGILDDHQIEA-TIAV
+                120 -|||||--.|||||||||||||||.|||--||..|||||.||||||||||||||--||||
+query            51 AINPKV-TVTFYPYDVTVPIAETTKLLK-TIFAQLKTVDVLINGAGILDDHQIE-RTIAV
+
+target          175 NYTGLVNTTTAIMEFWDKRKCG-PGGIICNIGSVTGFNAIYQVPVYSGTKAAVVNFTSSL
+                180 ||||||||||||..||||||-|-|||||||||||||||||||||||||||||||||||||
+query           108 NYTGLVNTTTAILDFWDKRK-GGPGGIICNIGSVTGFNAIYQVPVYSGTKAAVVNFTSSL
+
+target          234 AKLAPITGVTAYTVNPGITRTTLVQK--FNSWLDVEPQVAKKLLAHPTQPP-LACAENFV
+                240 ||||||||||||||||||||||||----||||||||||||.|||||||||--||||||||
+query           167 AKLAPITGVTAYTVNPGITRTTLV--HTFNSWLDVEPQVAEKLLAHPTQP-SLACAENFV
+
+target          291 KAIELNQNGALWKLDLGTLEAIKWTKHWDSGI 323
+                300 ||||||||||.|||||||||||.||||||||| 332
+query           224 KAIELNQNGAIWKLDLGTLEAIQWTKHWDSGI 256

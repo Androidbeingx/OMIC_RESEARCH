@@ -3,6 +3,7 @@ Main script of the first thesis.
 """
 
 import re
+import os
 import itertools
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
@@ -87,26 +88,54 @@ def get_alignments(file_paths: tuple[str, ...] | list[str]) -> Alignments:
     return alignments
 
 
-def save_alignments_as_files(alignments: Alignments) -> None:
+def save_alignments_as_files(alignments: Alignments, output_dir: str) -> list[str]:
+    '''
+    Save the protein sequence alignments as text files.
+    '''
 
-    # TODO: This is to build header annotations for the alignments.
-    # NAME: <name of gene / protein>
-    # SPECIES: <taxonomy name>
-    # TYPE: <If it's protein, nc o what..>
-
+    # Regular expressions for extracting taxonomy name and gene name from the input
     taxonomy_name_regex = re.compile(r'(\[([^\[\]]*)\])$')
-    gene_name_regex = re.compile(r'^[a-z\-\s]+[^\[]')
+    gene_name_regex = re.compile(r'^[a-z\-\s]+[^\[,]')
 
-    for pair in list(alignments.keys()):
-        # print(str(pair))
-        print(list(taxonomy_name_regex.finditer(str(pair[0])))[0].group(2))
-        # print(list(gene_name_regex.finditer(str(pair[0]))))
+    # A list to store the output file paths
+    output_file_paths: list[str] = []
 
-    # x = alignments[)[0]]['alignment'][0]
-    # print(x)
+    # Iterate over the alignments and save each alignment as a separate file
+    for gene_pair, result in alignments.items():
+        # Extract the taxonomy names and gene name from the input using regex
+        taxonomy_name_1: str = list(taxonomy_name_regex.finditer(str(gene_pair[0])))[0].group(2)
+        taxonomy_name_2: str = list(taxonomy_name_regex.finditer(str(gene_pair[1])))[0].group(2)
+        gene_name: str = list(gene_name_regex.finditer(str(gene_pair[1])))[0].group(0)
 
-    # with open('testy.alignment', 'w') as f:
-    #     f.write(str(x))
+        # Extract the alignment content from the result dictionary
+        alignment_content: str = str(result['alignment'][0])
+
+        # Format the taxonomy names and gene name for creating the output file name
+        formated_taxonomy_name_1: str =  taxonomy_name_1.replace(' ', '_').lower()
+        formated_taxonomy_name_2: str =  taxonomy_name_2.replace(' ', '_').lower()
+        formated_gene_name: str = gene_name.replace(' ', '_').lower()
+
+        # Create the output file name and path
+        file_name: str = f"{formated_gene_name}-{formated_taxonomy_name_1}-{formated_taxonomy_name_2}.alignment"
+        file_path: str = os.path.join(output_dir, file_name)
+
+        # Create the output directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+
+        # Write the alignment content to the output file
+        with open(file_path, 'w') as file:
+            file.write(
+                f"GENE NAME: {gene_name}\n" +\
+                f"TAXONOMY NAME 1: {taxonomy_name_1}\n" +\
+                f"TAXONOMY NAME 2: {taxonomy_name_2}\n" +\
+                f"TYPE: PROTEIN\n\n" +\
+                f"{alignment_content}"
+            )
+
+        # Add the file path to the output list
+        output_file_paths.append(file_path)
+
+    return output_file_paths
 
 
 def main() -> None:
@@ -147,7 +176,8 @@ def main() -> None:
 
     # Get alignment results.
     alignments: Alignments = get_alignments(fasta_paths)
-    save_alignments_as_files(alignments)
+    alignment_paths: list[str] = save_alignments_as_files(alignments, '../data/alignments')
+    print(alignment_paths)
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,24 @@
+GENE NAME: alcohol dehydrogenase 
+TAXONOMY NAME 1: Drosophila teissieri
+TAXONOMY NAME 2: Drosophila ananassae
+TYPE: PROTEIN
+
+target            0 MAF-TLTNKNVVFVAGLGGIGLDTSKELVKRDLKNLVILDRIENPAA--IAELKA-INPK
+                  0 ||--.|||||||||||||||||||.|||.|||||||||||||.||----|||||--||||
+query             0 MA-LSLTNKNVVFVAGLGGIGLDTTKELLKRDLKNLVILDRIDNP--VVIAELK-TINPK
+
+target           56 VTVTFY-PYDVTVPIA-ETTK-LLKTIFA-QLKTIDVLINGAGILDDHQIERTIAVNYTG
+                 60 |||||--||||||||--||-|-||||||--.|||.|.|||||||||||||||||||||||
+query            56 VTVTF-IPYDVTVPI-TET-KKLLKTIF-DKLKTVDILINGAGILDDHQIERTIAVNYTG
+
+target          112 LVNTTTAILDFWDKRKGGPGGIICNIGSVTGFNAIYQVPVYSGTKAAVVNFTSSLAKLAP
+                120 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           112 LVNTTTAILDFWDKRKGGPGGIICNIGSVTGFNAIYQVPVYSGTKAAVVNFTSSLAKLAP
+
+target          172 ITGVTAYTVNPGITRTTLVHKFNSWLDVEPQVAEKLLAHPTQPSL--ACA-ENFVKAIEL
+                180 ||||||||||||||||||||||||||||||||||||||||||-|---||--|||||||||
+query           172 ITGVTAYTVNPGITRTTLVHKFNSWLDVEPQVAEKLLAHPTQ-S-SQAC-GENFVKAIEL
+
+target          229 NQNGAIWKLDL-GTLEAIQWSKHWDSGI 256
+                240 ||||||||||--|||||||||||||||| 268
+query           229 NQNGAIWKLD-RGTLEAIQWSKHWDSGI 256

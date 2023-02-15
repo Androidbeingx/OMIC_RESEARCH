@@ -1,0 +1,24 @@
+GENE NAME: alcohol dehydrogenase 
+TAXONOMY NAME 1: Drosophila ananassae
+TAXONOMY NAME 2: Drosophila simulans
+TYPE: PROTEIN
+
+target            0 MAL-SLTNKNVVFVAGLGGIGLDTTKELLKRDLKNLVILDRIDNPVV--IAELKT-INPK
+                  0 ||--.||||||.||||||||||||.|||||||||||||||||.||----|||||--||||
+query             0 MA-FTLTNKNVIFVAGLGGIGLDTSKELLKRDLKNLVILDRIENP--AAIAELK-AINPK
+
+target           56 VTVTFI-PYDVTVPIT-ET-KKLLKTIFD-KLKTVDILINGAGILDDHQIERTIAVNYTG
+                 60 |||||--||||||||--||-|-||||||--||||||.|||||||||||||||||||||||
+query            56 VTVTF-YPYDVTVPI-AETTK-LLKTIF-AKLKTVDVLINGAGILDDHQIERTIAVNYTG
+
+target          112 LVNTTTAILDFWDKRKGGPGGIICNIGSVTGFNAIYQVPVYSGTKAAVVNFTSSLAKLAP
+                120 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+query           112 LVNTTTAILDFWDKRKGGPGGIICNIGSVTGFNAIYQVPVYSGTKAAVVNFTSSLAKLAP
+
+target          172 ITGVTAYTVNPGITRTTLVHKFNSWLDVEPQVAEKLLAHPTQ-SSQ-ACG-ENFVKAIEL
+                180 ||||||||||||||||||||||||||||||||||||||||||-|---||--|||||||||
+query           172 ITGVTAYTVNPGITRTTLVHKFNSWLDVEPQVAEKLLAHPTQPS--LAC-AENFVKAIEL
+
+target          229 NQNGAIWKLDR-GTLEAIQWSKHWDSGI 256
+                240 ||||||||||--||||||||.||||||| 268
+query           229 NQNGAIWKLD-LGTLEAIQWTKHWDSGI 256
