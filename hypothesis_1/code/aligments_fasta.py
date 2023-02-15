@@ -43,7 +43,7 @@ def read_fasta(filepath: str) -> str:
 # Substitution Matrix (BLOSUM62, etc.) for aligning proteins.
 # BLAST uses BLOSUM62 in blastp.
 # ---------------------------------------------------------------------
-def use_substitution_matrix(prot1: str, prot2: str) -> int:
+def use_substitution_matrix(prot1: str, prot2: str) -> float:
     """
     Calculates the score of aligment between two proteins
     Param: two strings of proteins,
@@ -54,7 +54,7 @@ def use_substitution_matrix(prot1: str, prot2: str) -> int:
     aligner: PairwiseAligner = PairwiseAligner()
 
     # Get one of the matrices
-    blosum62_matrix: Array = substitution_matrices.load('BLOSUM62')
+    blosum62_matrix: list[str] | Array = substitution_matrices.load('BLOSUM62')
 
     # Put the matrix in the aligner.
     # This invalidates the match, mismatch and gap scores.

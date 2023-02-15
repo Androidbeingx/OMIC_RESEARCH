@@ -30,9 +30,10 @@ def get_info_with_regex(filename, regex,key):
     
     match_list: list[re.Match] = list(pat.finditer(txt))
 
+    dict_info: dict = {}
     for match in match_list:
         val = match.group(1).replace('\n','').strip()
-        dict_info: dict = {key: val}
+        dict_info = {key: val}
 
     print(dict_info)
     #return dict_info

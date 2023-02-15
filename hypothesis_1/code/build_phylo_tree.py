@@ -24,8 +24,15 @@ distance_matrix = calculator.get_distance(alignment)
 # Construct the phylogenetic tree using the Neighbor Joining algorithm
 constructor = DistanceTreeConstructor()
 
-# , [seq.id for seq in alignment]
+# Build tree.
 tree = constructor.nj(distance_matrix)
+
+# Format tree to a "phylo"xml format.
+# If you want to use it on the web with D3.js,
+# then you can convert the obtained xml into a json format, with another tool
+# ------------------------------
+# print(tree.format('phyloxml'))
+# ------------------------------
 
 # Draw the tree using the Phylo library
 Phylo.draw_ascii(tree)
