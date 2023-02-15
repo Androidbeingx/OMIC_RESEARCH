@@ -1,20 +1,25 @@
 Hypothesis 1
 ==============
 
-## Chosen organisms:
+### Chosen organisms:
 - Organism A: Fruit Flies
 - Organism B: Homo Sapiens
 
 
 ### Species of Organism A:
- - Drosophila melanogaster
- - Drosophila simulans
- - Drosophila sechellia
- - Drosophila yakuba
- - Drosophila erecta
- - Drosophila ananassae
- - Drosophila suzukii
- - Drosophila teissieri
+- Drosophila melanogaster
+- Drosophila simulans
+- Drosophila sechellia
+- Drosophila yakuba
+- Drosophila erecta
+- Drosophila ananassae
+- Drosophila suzukii
+- Drosophila teissieri
+
+
+### Chosen genes:
+- Adh (Alcohol dehydrogenase)
+- ADH1B (Alcohol dehydrogenase, prefered name: "All-trans-retinol dehydrogenase")
 
 
 #### Motives
