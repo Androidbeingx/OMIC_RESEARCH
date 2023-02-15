@@ -1,4 +1,4 @@
-# Hypothesis 1
+Hypothesis 1
 ==============
 
 ## Organism A: Fruit Flies
