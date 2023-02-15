@@ -1,8 +1,9 @@
 Hypothesis 1
 ==============
 
-## Organism A: Fruit Flies
-## Organism B: Homo Sapiens
+## Chosen organisms:
+- Organism A: Fruit Flies
+- Organism B: Homo Sapiens
 
 
 ### Species of Organism A:
