@@ -137,36 +137,6 @@ def save_alignments_as_files(alignments: Alignments, output_dir: str) -> list[st
 
     return output_file_paths
 
-def join_fasta_files(fasta_files: list[str] | tuple[str, ...], output_dir: str, file_name: str) -> str:
-    """
-    Joins multiple FASTA files into a single multi-FASTA file.
-    Returns the file path of the output file.
-
-    Example Usage:
-        fasta_files = ['./seq1.fasta', './seq2.fasta', './seq3.fasta']
-        output_file = './multi_seq.fasta'
-        join_fasta_files(fasta_files, output_file)
-    """
-
-    # Check if any of the input files don't exist
-    for file_path in fasta_files:
-        if not os.path.exists(file_path):
-            raise IOError(f"File not found: {file_path}")
-
-    os.makedirs(output_dir, exist_ok=True)
-
-    file_path: str = os.path.join(output_dir, file_name)
-
-    # Create the output file
-    with open(file_path, 'w') as out_file:
-        for file_path in fasta_files:
-            # Open each input FASTA file and copy its contents to the output file
-            with open(file_path, 'r') as in_file:
-                out_file.write(in_file.read())
-
-    print(f"Joined {len(fasta_files)} FASTA files into {output_dir}")
-
-    return file_path
 
 def main() -> None:
 
