@@ -9,9 +9,12 @@ from Bio.SeqFeature import SeqFeature
 from Bio.Align      import PairwiseAligner, substitution_matrices, PairwiseAlignments
 
 from Bio.Align.substitution_matrices import Array
+from typing import TypedDict
 
-
-
+class AlignmentResults(TypedDict):
+    alignment: PairwiseAlignments
+    score: float
+    percent_identity: float
 
 
 def read_fasta(filepath: str) -> str:
@@ -43,7 +46,7 @@ def read_fasta(filepath: str) -> str:
 # Substitution Matrix (BLOSUM62, etc.) for aligning proteins.
 # BLAST uses BLOSUM62 in blastp.
 # ---------------------------------------------------------------------
-def use_substitution_matrix(prot1: str, prot2: str) -> float:
+def use_blosum62_matrix(prot1: str, prot2: str) -> AlignmentResults:
     """
     Calculates the score of aligment between two proteins
     Param: two strings of proteins,
@@ -71,7 +74,11 @@ def use_substitution_matrix(prot1: str, prot2: str) -> float:
     # Calc. the alignment score as a percentage.
     percent_identity: float = (alignment.score / max_score) * 100
 
-    print(percent_identity)
+    alignment_results: AlignmentResults = {
+            'alignment': alignment,
+            'score': score,
+            'percent_identity': percent_identity
+            }
 
-    return score
+    return alignment_results
 
