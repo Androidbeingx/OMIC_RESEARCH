@@ -1,0 +1,11 @@
+;specie;accesion_num;description_seq;score;percent_identity
+0;drosphila_yakuba;XP_002099017.1;alcohol dehydrogenase [Drosophila yakuba];682.0;38.75
+1;drosphila_persimilis;XP_002018797.2;alcohol dehydrogenase [Drosophila persimilis];645.0;36.64772727272727
+2;drosphila_erecta;XP_001968897.1;alcohol dehydrogenase [Drosophila erecta];618.0;35.11363636363637
+3;drosphila_teissieri;XP_043663101.1;alcohol dehydrogenase [Drosophila teissieri];616.0;35.0
+4;drosphila_ananassae;XP_001961522.1;alcohol dehydrogenase [Drosophila ananassae];611.0;34.71590909090909
+5;drosphila_melanogaster;NP_001027270.1;alcohol dehydrogenase, isoform E [Drosophila melanogaster];610.0;34.659090909090914
+6;drosphila_guanche ;XP_034139855.1;alcohol dehydrogenase [Drosophila guanche];610.0;34.659090909090914
+7;drosphila_sechellia;XP_002035839.1;alcohol dehydrogenase [Drosophila sechellia];609.0;34.60227272727273
+8;drosphila_simulans;XP_016024999.1;alcohol dehydrogenase [Drosophila simulans];609.0;34.60227272727273
+9;drosphila_suzukii;XP_016937524.1;alcohol dehydrogenase [Drosophila suzukii];608.0;34.54545454545455

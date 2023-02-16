@@ -30,18 +30,6 @@ def read_fasta(filepath: str) -> str:
     return record.seq
   
 
-# in the main module as dict
-
-# drosphila_ananassae       = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_ananassae.fasta')
-# drosphila_erecta          = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_erecta.fasta')
-# drosphila_melanogaster    = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_melanogaster.fasta')
-# drosphila_sechellia       = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_sechellia.fasta')
-# drosphila_simulans        = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_simulans.fasta')
-# drosphila_suzukii         = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_suzukii.fasta')
-# drosphila_teissieri       = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_teissieri.fasta')
-# drosphila_yakuba          = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-drosophila_yakuba.fasta')
-# homo_sapiens              = read_fasta('dawbio2_m14_uf2_pt1/hypothesis_1/data/alcohol_dehydrogenase-homo_sapiens.fasta')
-
 
 # Substitution Matrix (BLOSUM62, etc.) for aligning proteins.
 # BLAST uses BLOSUM62 in blastp.
