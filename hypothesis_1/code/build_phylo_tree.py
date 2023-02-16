@@ -1,10 +1,16 @@
 import os
 from io import StringIO
-from Bio import AlignIO, SeqIO
-from Bio.Phylo.TreeConstruction import DistanceCalculator, DistanceTreeConstructor
-from Bio import Phylo
 
-def join_fasta_files(fasta_files: list[str] | tuple[str, ...], output_dir: str, file_name: str) -> str:
+from Bio import AlignIO
+from Bio import Phylo
+from Bio import SeqIO
+from Bio.Phylo.TreeConstruction import DistanceCalculator
+from Bio.Phylo.TreeConstruction import DistanceTreeConstructor
+
+
+def join_fasta_files(
+    fasta_files: list[str] | tuple[str, ...], output_dir: str, file_name: str
+) -> str:
     """
     Joins multiple FASTA files into a single multi-FASTA file.
     Returns the file path of the output file.
@@ -25,17 +31,19 @@ def join_fasta_files(fasta_files: list[str] | tuple[str, ...], output_dir: str, 
     file_path: str = os.path.join(output_dir, file_name)
 
     # Create the output file
-    with open(file_path, 'w') as out_file:
+    with open(file_path, "w") as out_file:
         for file_path in fasta_files:
             # Open each input FASTA file and copy its contents to the output file
-            with open(file_path, 'r') as in_file:
+            with open(file_path, "r") as in_file:
                 out_file.write(in_file.read())
 
     print(f"Joined {len(fasta_files)} FASTA files into {output_dir}")
 
     return file_path
 
+
 from Bio import SeqIO
+
 
 def adjust_sequence_lengths(filepath, length=None):
     """
@@ -69,6 +77,7 @@ def adjust_sequence_lengths(filepath, length=None):
     # Return the adjusted sequences as a string in FASTA format
     return "".join(record.format("fasta") for record in records)
 
+
 def create_phylogenetic_tree_from_file(filepath):
     """
     Given a filepath to a multi-FASTA file containing protein sequences, this function creates a phylogenetic tree
@@ -79,7 +88,7 @@ def create_phylogenetic_tree_from_file(filepath):
     alignment = AlignIO.read(filepath, "fasta")
 
     # Create a distance matrix using the alignment
-    calculator = DistanceCalculator('identity')
+    calculator = DistanceCalculator("identity")
     distance_matrix = calculator.get_distance(alignment)
 
     # Construct the phylogenetic tree using the Neighbor Joining algorithm
@@ -91,11 +100,14 @@ def create_phylogenetic_tree_from_file(filepath):
     # Draw the tree using the Phylo library
     Phylo.draw_ascii(tree)
 
-if __name__ == '__main__':
-    multi_fasta = adjust_sequence_lengths("../data/multi-fasta/multi-fasta-result.fasta")
 
-    with open('testy.fasta', 'w') as f:
+if __name__ == "__main__":
+    multi_fasta = adjust_sequence_lengths(
+        "../data/multi-fasta/multi-fasta-result.fasta"
+    )
+
+    with open("testy.fasta", "w") as f:
         f.write(multi_fasta)
 
-    create_phylogenetic_tree_from_file('testy.fasta')
+    create_phylogenetic_tree_from_file("testy.fasta")
     # create_phylogenetic_tree_from_file("../data/multi-fasta/multi-fasta-result.fasta")

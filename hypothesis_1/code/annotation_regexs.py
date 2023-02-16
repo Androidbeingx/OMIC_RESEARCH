@@ -8,7 +8,13 @@ from pathlib import Path
 
 ###############################################################################
 
-# Regular expressions to get annotations from a genbank file.
+# PATH FILE GENBANK
+# list_files: list[str] = ['dawbio2_m14_uf2_pt1/hypothesis_1/data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_ananassae.gb',
+#                           'dawbio2_m14_uf2_pt1/hypothesis_1/data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_erecta.gb',
+#                           'dawbio2_m14_uf2_pt1/hypothesis_1/data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_melanogaster.gb']
+
+
+# REGEX
 ANNOTATION_REGEXS: list[re.Pattern] = [
     re.compile(r"ACCESSION(.*\d)"),
     re.compile(r"/organism=(\".*\")"),
@@ -23,7 +29,7 @@ ANNOTATION_REGEXS: list[re.Pattern] = [
 # ------------------------------------------------------------------------------
 # Limpiar str removiendo saltos de linea y comillas.
 # ------------------------------------------------------------------------------
-def _replace_str(text):
+def replace_str(text):
     """
     Clean string removing line breaks and quotes
     param: the text to be cleared
@@ -38,7 +44,7 @@ def _replace_str(text):
 
 # Get information with regex.
 # ------------------------------------------------------------------------------
-def get_info_with_regex(file_path, list_regex: list[re.Pattern]) -> list[str]:
+def get_info_with_regex(file_path: str, list_regex: list[re.Pattern]) -> list[str]:
     """
     Get information from genbank with regular expression
     param:  file_path -> genbank file path
@@ -52,48 +58,19 @@ def get_info_with_regex(file_path, list_regex: list[re.Pattern]) -> list[str]:
         match_list: list[re.Match] = list(pattern.finditer(txt))
 
         for match in match_list:
-            list_info.append(_replace_str(match.group(1)).strip())
+            list_info.append(replace_str(match.group(1)).strip())
 
     return list_info
 
 
 # ------------------------------------------------------------------------------
-def create_dict_info_gb(file_path: str, list_regex: list[re.Pattern]) -> dict[str, str]:
-    """
-    Create dictionary to identify what each value is.
-    param: file_path -> the file path.
-    return: dict_info_gb -> information organized with your key.
-    """
 
-    list_key: list[str] = [
-        "accession",
-        "organism",
-        "chromosome",
-        "product",
-        "gene",
-        "cds",
-        "definition",
-    ]
-
-    list_value: list[str] = get_info_with_regex(file_path, list_regex)
-
-    dict_info_gb = dict(zip(list_key, list_value))
-    return dict_info_gb
+# ------------------------------------------------------------------------------
+def main():
+    return
 
 
 # ------------------------------------------------------------------------------
-def get_info_all_files_gb(list_files, list_regex) -> list[dict]:
-    """
-    Get information from a list of gb files.
-    param: list_files -> list of file paths where the information is sought.
-    return: list_dict_info -> list of dictionaries with information.
-    """
-
-    list_dict_info: list[dict] = []
-    for file_path in list_files:
-        list_dict_info.append(create_dict_info_gb(file_path, list_regex))
-
-    return list_dict_info
-
-
-# ------------------------------------------------------------------------------
+# Main
+if __name__ == "__main__":
+    main()

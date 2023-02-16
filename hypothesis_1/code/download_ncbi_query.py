@@ -11,10 +11,12 @@ Usage example:
     )
 
 """
-
-from Bio import Entrez, SeqIO
-from typing import TypedDict, TextIO
 import os
+from typing import TextIO
+from typing import TypedDict
+
+from Bio import Entrez
+from Bio import SeqIO
 
 
 class SearchResult(TypedDict):
