@@ -33,6 +33,10 @@ target          258 SQNLSINPM-LLLTGRTWKGA--VYGG-FK-SK--EGI-PKLVADFMAKKFSLDALIT-H
                 360 .----.||--.--|-||------|.---|--|---.-.-|.-||.---|---|--|---|
 query           213 T----VNP-GI--T-RT----TLVH--KF-NS-WLD-VEPR-VAE---K---L--L--EH
 
-target          309 VLP----------FE-K-I--NE-G--F--DL--L-------H--SGKSIRTVLTF 335
-                420 --|----------|--|-|--|.-|--.--||--|-------|--||--|------ 476
-query           245 --PTQTSQQCAENF-VKAIELNKNGAIWKLDLGTLEPITWTQHWDSG--I------ 290
+target          309 VLP----------FE-K-I--NE-G--F--DL--L-------H--SGKSIRTVLTF
+                420 --|----------|--|-|--|.-|--.--||--|-------|--||--|------
+query           245 --PTQTSQQCAENF-VKAIELNKNGAIWKLDLGTLEPITWTQHWDSG--I------
+
+target          335
+                476
+query           290

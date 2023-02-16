@@ -186,7 +186,7 @@ def save_dataframe(output_dir: str, file_name: str, dataframe: pd.DataFrame) -> 
     """
     os.makedirs(output_dir, exist_ok=True)
     file_path: str = os.path.join(output_dir, file_name)
-    dataframe.to_csv(file_path, sep=";")
+    dataframe.to_csv(file_path, sep=";", index=False)
 
     return file_path
 
@@ -265,7 +265,7 @@ def main() -> None:
 
     # ==============================================================================
 
-    # # Download the genbank and fasta files of each first result / query.
+    # Download the genbank and fasta files of each first result / query.
     paths: list[str] = download_fasta_and_genbank(queries)
 
     # Get file paths with the given extensions.

@@ -1,11 +1,11 @@
-;accession;organism;chromosome;product;gene;cds;definition;score;identity_percent
-0;XP_016937524;Drosophila suzukii;2L;alcohol dehydrogenase;LOC108015552;1..256;alcohol dehydrogenase [Drosophila suzukii];682.0;38.75
-1;XP_002035839;Drosophila sechellia;2L;alcohol dehydrogenase;LOC6611292;1..256;alcohol dehydrogenase [Drosophila sechellia];645.0;36.64772727272727
-2;XP_002018797;Drosophila persimilis;Unknown;alcohol dehydrogenase;LOC6593284;1..290;alcohol dehydrogenase [Drosophila persimilis];618.0;35.11363636363637
-3;XP_016024999;Drosophila simulans;2L;alcohol dehydrogenase;LOC6732347;1..256;alcohol dehydrogenase [Drosophila simulans];616.0;35.0
-4;XP_001961522;Drosophila ananassae;3R;alcohol dehydrogenase;LOC6492907;1..256;alcohol dehydrogenase [Drosophila ananassae];611.0;34.71590909090909
-5;XP_043663101;Drosophila teissieri;2L;alcohol dehydrogenase;LOC122626787;1..256;alcohol dehydrogenase [Drosophila teissieri];610.0;34.659090909090914
-6;XP_034139855;Drosophila guanche;Unknown;alcohol dehydrogenase;LOC117590927;1..254;alcohol dehydrogenase [Drosophila guanche];610.0;34.659090909090914
-7;NP_001027270;Drosophila melanogaster;2L;alcohol dehydrogenase, isoform E;Adh;1..256;alcohol dehydrogenase, isoform E [Drosophila melanogaster];609.0;34.60227272727273
-8;XP_001968897;Drosophila erecta;Unknown;alcohol dehydrogenase;LOC6540581;1..256;alcohol dehydrogenase [Drosophila erecta];609.0;34.60227272727273
-9;XP_002099017;Drosophila yakuba;3R;alcohol dehydrogenase;LOC6538495;1..323;alcohol dehydrogenase [Drosophila yakuba];608.0;34.54545454545455
+accession;organism;chromosome;product;gene;cds;definition;score;identity_percent
+XP_016024999;Drosophila simulans;2L;alcohol dehydrogenase;LOC6732347;1..256;alcohol dehydrogenase [Drosophila simulans];682.0;38.75
+XP_002099017;Drosophila yakuba;3R;alcohol dehydrogenase;LOC6538495;1..323;alcohol dehydrogenase [Drosophila yakuba];645.0;36.64772727272727
+XP_043663101;Drosophila teissieri;2L;alcohol dehydrogenase;LOC122626787;1..256;alcohol dehydrogenase [Drosophila teissieri];618.0;35.11363636363637
+XP_016937524;Drosophila suzukii;2L;alcohol dehydrogenase;LOC108015552;1..256;alcohol dehydrogenase [Drosophila suzukii];616.0;35.0
+XP_034139855;Drosophila guanche;Unknown;alcohol dehydrogenase;LOC117590927;1..254;alcohol dehydrogenase [Drosophila guanche];611.0;34.71590909090909
+XP_002018797;Drosophila persimilis;Unknown;alcohol dehydrogenase;LOC6593284;1..290;alcohol dehydrogenase [Drosophila persimilis];610.0;34.659090909090914
+XP_001968897;Drosophila erecta;Unknown;alcohol dehydrogenase;LOC6540581;1..256;alcohol dehydrogenase [Drosophila erecta];610.0;34.659090909090914
+XP_002035839;Drosophila sechellia;2L;alcohol dehydrogenase;LOC6611292;1..256;alcohol dehydrogenase [Drosophila sechellia];609.0;34.60227272727273
+NP_001027270;Drosophila melanogaster;2L;alcohol dehydrogenase, isoform E;Adh;1..256;alcohol dehydrogenase, isoform E [Drosophila melanogaster];609.0;34.60227272727273
+XP_001961522;Drosophila ananassae;3R;alcohol dehydrogenase;LOC6492907;1..256;alcohol dehydrogenase [Drosophila ananassae];608.0;34.54545454545455
