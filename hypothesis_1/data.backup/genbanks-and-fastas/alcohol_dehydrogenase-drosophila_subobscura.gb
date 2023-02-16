@@ -1,0 +1,75 @@
+LOCUS       XP_002018797             290 aa            linear   INV 07-NOV-2018
+DEFINITION  alcohol dehydrogenase [Drosophila persimilis].
+ACCESSION   XP_002018797
+VERSION     XP_002018797.2
+DBLINK      BioProject: PRJNA501994
+DBSOURCE    REFSEQ: accession XM_002018761.2
+KEYWORDS    RefSeq.
+SOURCE      Drosophila persimilis
+  ORGANISM  Drosophila persimilis
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Endopterygota; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_020825294.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Nov 7, 2018 this sequence version replaced XP_002018797.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila persimilis Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.1
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..290
+                     /organism="Drosophila persimilis"
+                     /strain="14011-0111.01,24,50"
+                     /db_xref="taxon:7234"
+                     /chromosome="Unknown"
+                     /tissue_type="whole body"
+                     /dev_stage="adult"
+     Protein         1..290
+                     /product="alcohol dehydrogenase"
+                     /calculated_mol_wt=31602
+     Region          42..281
+                     /region_name="ADH_SDR_c_like"
+                     /note="insect type alcohol dehydrogenase (ADH)-like,
+                     classical (c) SDRs; cd05323"
+                     /db_xref="CDD:187584"
+     Site            order(48,50..53,73..75,98..101,127..130,142,172..174,187,
+                     191,217..220,222..225)
+                     /site_type="other"
+                     /note="NAD binding site [chemical binding]"
+                     /db_xref="CDD:187584"
+     Site            order(136..137,140,144..145,148..149,152,155,175,178..180,
+                     182..183,185..186,188..190,192..193,196..197,200..201,
+                     203..204,219,245,273,280..281)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:187584"
+     Site            order(143,174,187,191)
+                     /site_type="active"
+                     /db_xref="CDD:187584"
+     CDS             1..290
+                     /gene="LOC6593284"
+                     /coded_by="XM_002018761.2:16..888"
+                     /db_xref="GeneID:6593284"
+ORIGIN      
+        1 msrttiivys avsscqvqqa dqhffkstqs ikskdrmslt nknvvfvagl ggigldtsre
+       61 lvkrnlknlv ildridnpaa iaelkainpk vtitfypydv tvpvaettkl lktifaqvkt
+      121 idvlingagi lddhqierti avnytglvnt ttaildfwdk rkggpggiic nigsvtgfna
+      181 iyqvpvysgs kaavvnftss laklapitgv taytvnpgit rttlvhkfns wldveprvae
+      241 kllehptqts qqcaenfvka ielnkngaiw kldlgtlepi twtqhwdsgi
+//
+

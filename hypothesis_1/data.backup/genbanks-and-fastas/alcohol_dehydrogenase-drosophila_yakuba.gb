@@ -1,0 +1,78 @@
+LOCUS       XP_002099017             323 aa            linear   INV 24-AUG-2021
+DEFINITION  alcohol dehydrogenase [Drosophila yakuba].
+ACCESSION   XP_002099017
+VERSION     XP_002099017.1
+DBLINK      BioProject: PRJNA695779
+DBSOURCE    REFSEQ: accession XM_002098981.3
+KEYWORDS    RefSeq.
+SOURCE      Drosophila yakuba
+  ORGANISM  Drosophila yakuba
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Endopterygota; Diptera; Brachycera;
+            Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_052530.2) annotated using gene prediction method: Gnomon,
+            supported by EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Drosophila yakuba Annotation Release
+                                           102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..323
+                     /organism="Drosophila yakuba"
+                     /strain="Tai18E2"
+                     /isolation_source="600 pooled females from a lab stock"
+                     /db_xref="taxon:7245"
+                     /chromosome="3R"
+                     /sex="female"
+                     /tissue_type="whole fly"
+                     /country="Cote d'Ivoire"
+                     /collection_date="1983"
+     Protein         1..323
+                     /product="alcohol dehydrogenase"
+                     /calculated_mol_wt=35060
+     Region          75..314
+                     /region_name="ADH_SDR_c_like"
+                     /note="insect type alcohol dehydrogenase (ADH)-like,
+                     classical (c) SDRs; cd05323"
+                     /db_xref="CDD:187584"
+     Site            order(81,83..86,106..108,131..134,160..163,175,205..207,
+                     220,224,250..253,255..258)
+                     /site_type="other"
+                     /note="NAD binding site [chemical binding]"
+                     /db_xref="CDD:187584"
+     Site            order(169..170,173,177..178,181..182,185,188,208,211..213,
+                     215..216,218..219,221..223,225..226,229..230,233..234,
+                     236..237,252,278,306,313..314)
+                     /site_type="other"
+                     /note="homodimer interface [polypeptide binding]"
+                     /db_xref="CDD:187584"
+     Site            order(176,207,220,224)
+                     /site_type="active"
+                     /db_xref="CDD:187584"
+     CDS             1..323
+                     /gene="LOC6538495"
+                     /coded_by="XM_002098981.3:136..1107"
+                     /db_xref="GeneID:6538495"
+ORIGIN      
+        1 mplrlstial lkrtplllvq klkaaqptrt llhstttrnl vpflgddscv fsnkaiirhg
+       61 gsqcdqkeaf slsnknvifv aglggigldt skelvkrdlk nlvildrikn paaiaelkki
+      121 npkvaitfyp ydvtvpiaet tellkcifsr lktvdiling agilddhqie atiavnytgl
+      181 vntttaimef wdkrkcgpgg iicnigsvtg fnaiyqvpvy sgtkaavvnf tsslaklapi
+      241 tgvtaytvnp gitrttlvqk fnswldvepq vakkllahpt qpplacaenf vkaielnqng
+      301 alwkldlgtl eaikwtkhwd sgi
+//
+

@@ -15,7 +15,7 @@ from aligments_fasta import use_blosum62_matrix
 from annotation_regexs import ANNOTATION_REGEXS
 from annotation_regexs import get_info_with_regex
 from download_ncbi_query import download_gene_files
-
+from phylo_tree import join_fasta_files, run_clustal, display_phylo_tree
 
 # Global types
 # ==============================
@@ -266,7 +266,7 @@ def main() -> None:
     # ==============================================================================
 
     # # Download the genbank and fasta files of each first result / query.
-    # paths: list[str] = download_fasta_and_genbank(queries)
+    paths: list[str] = download_fasta_and_genbank(queries)
 
     # Get file paths with the given extensions.
     fasta_paths: list[str] = get_files_with_extension(
@@ -301,10 +301,15 @@ def main() -> None:
         "../data/csv", "alignment-results.csv", result_df
     )
 
-    # This is for the end!!!
-    # Leave it commented for now.
+    # Phylogenetic tree from the result!
     # ===========================
-    # multi_fasta_path: str = join_fasta_files(fasta_paths, '../data/multi-fasta', 'multi-fasta-result.fasta')
+    multi_fasta_path: str = join_fasta_files(fasta_paths, '../data/multi-fasta', 'multi-fasta.fasta')
+
+    output_msa_path: str = '../data/multi-fasta/msa_result.clustal'
+    output_tree_path: str = '../data/multi-fasta/tree.dnd'
+
+    run_clustal(multi_fasta_path, output_msa_path, output_tree_path)
+    display_phylo_tree(output_tree_path, 'newick')
     # ===========================
 
 

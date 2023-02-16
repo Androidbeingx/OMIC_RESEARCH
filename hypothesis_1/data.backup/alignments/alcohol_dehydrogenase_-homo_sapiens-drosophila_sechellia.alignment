@@ -1,0 +1,38 @@
+GENE NAME: alcohol dehydrogenase 
+TAXONOMY NAME 1: Homo sapiens
+TAXONOMY NAME 2: Drosophila sechellia
+TYPE: PROTEIN
+SCORE: 609.0
+PERCENT IDENTITY: 34.60227272727273
+
+target            0 MVAVG--ICHTD-DHV--VSGNLVTPLPVILGHEAAGIVESVG-EGVTT--V-KPG-D-K
+                  0 |-|----.--|.-.-|--|.|-|--------|----||----|-.--|.--.-|---|-|
+query             0 M-A--FTL--TNKN-VIFVAG-L--------G----GI----GLD--TSKELLK--RDLK
+
+target           49 --VIPLFTPQCGKC-RVCKNP----ESNYCLKND-LGNPRG-TLQDGTRRF-----TCRG
+                 60 --||-|---------|.-.||----|----||---.-||.--|.---|--|-----|---
+query            33 NLVI-L--------DRI-ENPAAIAE----LK--AI-NPK-VTV---T--FYPYDVT---
+
+target           95 K-PIHHFLG--TS----T-FSQY--TVVDE---N-A-VAKIDAASP---LEK-VCL-IGC
+                120 --||-------|.----|-|..---||-|----|-|-.--.|-------.|.-.---.--
+query            67 -VPI-----AETTKLLKTIFAK-LKTV-D-VLINGAGI--LD----DHQIERTI--AV--
+
+target          135 G-FSTGYGSA-VNVAKVTPGSTCAV--F-----GLG-GVGLSAVMGCKAAGAARIIAVDI
+                180 --.-||-----||----|--.|-|.--|-----|-|-|-|.--.--|-------------
+query           108 -NY-TG----LVN----T--TT-AILDFWDKRKG-GPG-GI--I--C-------------
+
+target          185 NKDKFAKAKELGA-TECI--NPQD--YKKPIQEVLKEMTDGG-VDFSFEVIG-R--L-D-
+                240 |---------.|.-|-----|-----|----|-|---------|-.|----|-.--.-.-
+query           136 N---------IGSVT---GFN---AIY----Q-V--------PV-YS----GTKAAVVNF
+
+target          234 TMMASL--LCCHEACG--TSVIVGVPP-A-SQNLSINPM-LLLTGRTWKGA--VYGG-FK
+                300 |--.||--|----|----|----||---|-.----.||--.--|-||------|.---|-
+query           163 T--SSLAKL----A--PIT----GV--TAYT----VNP-GI--T-RT----TLVH--KF-
+
+target          284 -SK--EGI-PKLVADFMAKKFSLDALIT-HVLP----------FE-K-I--NE-G--F--
+                360 -|---.-.-|.-||.---|---|--|---|--|----------|--|-|--|.-|--.--
+query           194 NS-WLD-VEPQ-VAE---K---L--L--AH--PTQPSLACAENF-VKAIELNQNGAIWKL
+
+target          320 DL--L-------H--SGKSIRTVLTF 335
+                420 ||--|-------|--||--|------ 446
+query           238 DLGTLEAIQWTKHWDSG--I------ 256
