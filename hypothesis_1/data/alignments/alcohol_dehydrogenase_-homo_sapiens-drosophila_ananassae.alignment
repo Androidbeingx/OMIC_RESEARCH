@@ -2,6 +2,8 @@ GENE NAME: alcohol dehydrogenase
 TAXONOMY NAME 1: Homo sapiens
 TAXONOMY NAME 2: Drosophila ananassae
 TYPE: PROTEIN
+SCORE: 611.0
+PERCENT IDENTITY: 34.71590909090909
 
 target            0 MVAVG-ICHTDDHVVSG-NLVTPLPV-I--LGHEAAGIVESVG-EGVTT--V-KPG-D-K
                   0 |-|.--.--|.-------|-|----|-.--||----||----|-.--||--.-|---|-|

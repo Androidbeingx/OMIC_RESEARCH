@@ -2,6 +2,8 @@ GENE NAME: alcohol dehydrogenase
 TAXONOMY NAME 1: Homo sapiens
 TAXONOMY NAME 2: Drosophila teissieri
 TYPE: PROTEIN
+SCORE: 616.0
+PERCENT IDENTITY: 35.0
 
 target            0 MVAVG--ICHTDDHVVSG-NLVTPLPV-I--LGHEAAGIVESVG-EGVTT---VKPG-D-
                   0 |-|----.--|.-------|-|----|-.--||----||----|-.--|.---||---|-

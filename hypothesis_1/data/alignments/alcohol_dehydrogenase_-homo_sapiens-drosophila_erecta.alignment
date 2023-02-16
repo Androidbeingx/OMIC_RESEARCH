@@ -2,6 +2,8 @@ GENE NAME: alcohol dehydrogenase
 TAXONOMY NAME 1: Homo sapiens
 TAXONOMY NAME 2: Drosophila erecta
 TYPE: PROTEIN
+SCORE: 618.0
+PERCENT IDENTITY: 35.11363636363637
 
 target            0 MVAVG--ICHTD-DHV--VSGNLVTPLPVILGHEAAGIVESVG-EGVTT---VKPG-D-K
                   0 |-|----.--|.-.-|--|.|-|--------|----||----|-.--|.---||---|-|

@@ -2,6 +2,8 @@ GENE NAME: alcohol dehydrogenase
 TAXONOMY NAME 1: Homo sapiens
 TAXONOMY NAME 2: Drosophila suzukii
 TYPE: PROTEIN
+SCORE: 608.0
+PERCENT IDENTITY: 34.54545454545455
 
 target            0 MVAVG--ICHTD-DHV--VSGNLVTPLPVILGHEAAGIVESVG-EGVTT---VKPG-D-K
                   0 |-.----.--|.-.-|--|.|-|--------|----||----|-.--|.---||---|-|

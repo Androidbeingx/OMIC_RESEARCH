@@ -55,23 +55,27 @@ def filter_fasta_paths(paths: list[str]) -> list[str]:
     return [path for path in paths if path.lower().endswith(".fasta")]
 
 
-def get_alignments(file_paths: tuple[str, ...] | list[str]) -> Alignments:
+def get_alignments(target_fasta: str, file_paths: tuple[str, ...] | list[str]) -> Alignments:
     """Get pairwise alignments for protein sequences in the given files."""
 
     # Generate pairwise alignments between all the given files
     # Combinations of all possible file path pairs
-    file_path_combinations: tuple[tuple[str, str]] = tuple(
-        combination for combination in itertools.combinations(file_paths, 2)
-    )
+    # file_path_combinations: tuple[tuple[str, str]] = tuple(
+    #     combination for combination in itertools.combinations(file_paths, 2)
+    # )
+
+    # Filter out our target fasta from the rest.
+    filtered_paths: list[str] = [path for path in file_paths if path != target_fasta]
+
     # Create an empty dictionary to store the alignment results
     alignments: Alignments = {}
 
     # Loop through all the file path pairs and perform pairwise alignment for each pair
-    for paths in file_path_combinations:
+    for path in filtered_paths:
 
         # Read the protein sequences from the fasta files
-        protein_1: SeqRecord = SeqIO.read(paths[0], "fasta")
-        protein_2: SeqRecord = SeqIO.read(paths[1], "fasta")
+        protein_1: SeqRecord = SeqIO.read(target_fasta, "fasta")
+        protein_2: SeqRecord = SeqIO.read(path, "fasta")
 
         # Extract the protein names from the sequence descriptions
         protein_name_1: str = " ".join(protein_1.description.split(" ")[1:])
@@ -105,7 +109,11 @@ def save_alignments_as_files(alignments: Alignments, output_dir: str) -> list[st
         # Extract the taxonomy names and gene name from the input using regex
         taxonomy_name_1: str = list(taxonomy_name_regex.finditer(str(gene_pair[0])))[0].group(2)
         taxonomy_name_2: str = list(taxonomy_name_regex.finditer(str(gene_pair[1])))[0].group(2)
-        gene_name: str = list(gene_name_regex.finditer(str(gene_pair[1])))[0].group(0)
+        gene_name: str = list(gene_name_regex.finditer(str(gene_pair[1])))[0].group(0).strip('_')
+
+        # Get scores
+        score: float = result['score']
+        percent_identity: float = result['percent_identity']
 
         # Extract the alignment content from the result dictionary
         alignment_content: str = str(result['alignment'][0])
@@ -128,7 +136,9 @@ def save_alignments_as_files(alignments: Alignments, output_dir: str) -> list[st
                 f"GENE NAME: {gene_name}\n" +\
                 f"TAXONOMY NAME 1: {taxonomy_name_1}\n" +\
                 f"TAXONOMY NAME 2: {taxonomy_name_2}\n" +\
-                f"TYPE: PROTEIN\n\n" +\
+                f"TYPE: PROTEIN\n" +\
+                f"SCORE: {score}\n" +\
+                f"PERCENT IDENTITY: {percent_identity}\n\n" +\
                 f"{alignment_content}"
             )
 
@@ -157,28 +167,33 @@ def main() -> None:
 
     # These paths are for testing. Simply avoiding the unnecessary repeated downloads.
     # ==============================================================================
-    # fasta_paths: tuple[str, ...] = (
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-homo_sapiens.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_teissieri.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_suzukii.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_ananassae.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_erecta.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_yakuba.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_sechellia.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_simulans.fasta",
-    #     "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_melanogaster.fasta"
-    # )
+    fasta_paths: tuple[str, ...] = (
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_guanche.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_sechellia.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_simulans.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_ananassae.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-homo_sapiens.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_persimilis.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_teissieri.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_melanogaster.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_subobscura.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_yakuba.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_suzukii.fasta',
+        '../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_erecta.fasta',
+    )
     # ==============================================================================
 
     # # Download the genbank and fasta files of each first result / query.
-    paths: list[str] = download_fasta_and_genbank(queries)
+    # paths: list[str] = download_fasta_and_genbank(queries)
 
     # # Extract the paths for only the fasta files.
-    fasta_paths: list[str] = filter_fasta_paths(paths)
+    # fasta_paths: list[str] = filter_fasta_paths(paths)
+
+    target_fasta: str = '../data/genbanks-and-fastas/alcohol_dehydrogenase-homo_sapiens.fasta'
 
     # Get alignment results.
-    # alignments: Alignments = get_alignments(fasta_paths)
-    # alignment_paths: list[str] = save_alignments_as_files(alignments, '../data/alignments')
+    alignments: Alignments = get_alignments(target_fasta, fasta_paths)
+    alignment_paths: list[str] = save_alignments_as_files(alignments, '../data/alignments')
 
     # This is for the end!!!
     # Leave it commented for now.

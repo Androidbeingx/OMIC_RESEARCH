@@ -2,6 +2,8 @@ GENE NAME: alcohol dehydrogenase
 TAXONOMY NAME 1: Homo sapiens
 TAXONOMY NAME 2: Drosophila yakuba
 TYPE: PROTEIN
+SCORE: 682.0
+PERCENT IDENTITY: 38.75
 
 target            0 M-VAVG-ICH-TDDHVVSGNLV--TPL----------PV---ILGHEAAGIVESVGEGVT
                   0 |-.----.---|---.-.--|.--|||----------|----.|-|-------|-----|

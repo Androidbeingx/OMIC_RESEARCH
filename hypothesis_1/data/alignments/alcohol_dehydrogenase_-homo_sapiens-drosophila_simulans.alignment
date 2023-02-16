@@ -2,6 +2,8 @@ GENE NAME: alcohol dehydrogenase
 TAXONOMY NAME 1: Homo sapiens
 TAXONOMY NAME 2: Drosophila simulans
 TYPE: PROTEIN
+SCORE: 609.0
+PERCENT IDENTITY: 34.60227272727273
 
 target            0 MVAVG--ICHTD-DHV--VSGNLVTPLPVILGHEAAGIVESVG-EGVTT--V-KPG-D-K
                   0 |-|----.--|.-.-|--|.|-|--------|----||----|-.--|.--.-|---|-|

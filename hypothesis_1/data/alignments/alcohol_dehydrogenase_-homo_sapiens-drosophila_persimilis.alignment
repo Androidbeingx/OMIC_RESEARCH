@@ -1,0 +1,38 @@
+GENE NAME: alcohol dehydrogenase 
+TAXONOMY NAME 1: Homo sapiens
+TAXONOMY NAME 2: Drosophila persimilis
+TYPE: PROTEIN
+SCORE: 645.0
+PERCENT IDENTITY: 36.64772727272727
+
+target            0 M------V--AVGI--C-------H----T------DDH-VVSG--NL--VTPLPV-I--
+                  0 |------|--||----|-------|----|------|---.-|---|---|----|-.--
+query             0 MSRTTIIVYSAV--SSCQVQQADQHFFKSTQSIKSKD--RM-S-LTN-KNV----VFVAG
+
+target           25 LGHEAAGIVESVG-EGVTT---VKPG-D-K--VIPLFTPQCGKC-RVCK-NP----ESNY
+                 60 ||----||----|-.--|.---||---.-|--||-|---------|.---||----|---
+query            49 LG----GI----GLD--TSRELVK--RNLKNLVI-L--------DRI--DNPAAIAE---
+
+target           71 CLKND-LGNPRG-TLQDGTRRF-----TCRGK-PIHHFLG--TS----T-FSQY--TVVD
+                120 -||---.-||.--|.---|--|-----|-----|.-------|.----|-|.|---|.-|
+query            83 -LK--AI-NPK-VTI---T--FYPYDVT----VPV-----AETTKLLKTIFAQ-VKTI-D
+
+target          114 E---N-A-VAKIDAASP---LEK-VCL-IGCG-FSTGYGSA-VNVAKVTPGSTCAV--F-
+                180 ----|-|-.--.|-------.|.-.---.----.-||-----||----|--.|-|.--|-
+query           122 -VLINGAGI--LD----DHQIERTI--AV---NY-TG----LVN----T--TT-AILDFW
+
+target          159 ----GLG-GVGLSAVMGCKAAGAARIIAVDINKDKFAKAKELGA-TECI--NPQD--YKK
+                240 ----|-|-|-|.--.--|-------------|---------.|.-|-----|-----|.-
+query           158 DKRKG-GPG-GI--I--C-------------N---------IGSVT---GFN---AIYQ-
+
+target          209 -PIQEVLKEM-TDGGVDFSFE--VIGRLD-TMMASL--LCCHEACG--TSVIVGVPP-A-
+                300 -|---|-----.-|----|-.--|.---.-|--.||--|----|----|----||---|-
+query           183 VP---V----YS-G----S-KAAVV---NFT--SSLAKL----A--PIT----GV--TAY
+
+target          258 SQNLSINPM-LLLTGRTWKGA--VYGG-FK-SK--EGI-PKLVADFMAKKFSLDALIT-H
+                360 .----.||--.--|-||------|.---|--|---.-.-|.-||.---|---|--|---|
+query           213 T----VNP-GI--T-RT----TLVH--KF-NS-WLD-VEPR-VAE---K---L--L--EH
+
+target          309 VLP----------FE-K-I--NE-G--F--DL--L-------H--SGKSIRTVLTF 335
+                420 --|----------|--|-|--|.-|--.--||--|-------|--||--|------ 476
+query           245 --PTQTSQQCAENF-VKAIELNKNGAIWKLDLGTLEPITWTQHWDSG--I------ 290
