@@ -23,7 +23,7 @@ Mutations in the Alcohol dehydrogenase (Adh) gene can lead to changes in the act
 
 It is important to note that while the Adh gene is present in fruit flies, it is also present in humans and other organisms. In humans, mutations in the Adh gene have been associated with a number of health problems, including alcohol intolerance, flushing (redness and warmth of the skin after drinking alcohol), and an increased risk of alcoholism. However, these conditions are relatively rare and are typically caused by specific genetic variants in the Adh gene.
 
-The specific variants of the Alcohol dehydrogenase (Adh) gene that have been associated with alcohol intolerance in humans include ADH1B47His and ADH1B2. These variants result in a reduced activity of the ADH enzyme, leading to an accumulation of acetaldehyde, a toxic intermediate product of alcohol metabolism, in the body. This accumulation causes the symptoms of alcohol intolerance, such as flushing (redness and warmth of the skin after drinking alcohol), rapid heartbeat, nausea, and headache.
+The specific variants of the Alcohol dehydrogenase (Adh) gene that have been associated with alcohol intolerance in humans include ADH1B47H and ADH1B2. These variants result in a reduced activity of the ADH enzyme, leading to an accumulation of acetaldehyde, a toxic intermediate product of alcohol metabolism, in the body. This accumulation causes the symptoms of alcohol intolerance, such as flushing (redness and warmth of the skin after drinking alcohol), rapid heartbeat, nausea, and headache.
 
 It's important to note that not everyone who carries these variants will develop alcohol intolerance. Other factors, such as overall health, diet, and the presence of other genes that affect alcohol metabolism, can also play a role.
 
@@ -38,31 +38,8 @@ It's worth noting that while the function of the human ADH1B and Drosophila mela
 - [Drosophila melanogaster ADH gene orthologs](https://www.orthodb.org/?ncbi=6732347)
 (Note: the human ADH1B2 is not listed here, because it is a variant of it, which is orthologous too.)
 
-- [Orthologous gene in human is HPGD](https://www.ncbi.nlm.nih.gov/gene/3248)
-(Disease caused by HPGD: Digital clubbing is characterized by enlargement of the nail plate and terminal segments of the fingers and toes,
+- [Orthologous gene in human is ADH1B](https://www.ncbi.nlm.nih.gov/gene/125/)
 
 ---
 
-# Previous idea:
-## Selected species:
-- Felis catus (domestic cat)
 
-## Selected related species (write here any of your suggestions):
-1. Panthera pardus (leopard) / Acinonyx jubatus (cheetah)
-2. Panthera tigris (tiger)
-3. Puma concolor (puma)
-4. Vulpes vulpes (red fox) *
-5. Pan paniscus (pygmy chimpanzee) * more related to humans 
-
-* Tottally different species interesting to see the relation
-
-Andrea: Would be interesting to see all diferent families leopard -> cheetah, 5 + cat would be 6 species like 2 each one.
-
-## Selected shared gene:
-- selectin L
-
-## Sources (in order):
-1. https://www.ncbi.nlm.nih.gov/search/all/?term=felis%20catus (click to "Genes" - "Browse and download")
-2.  Gene ID: 100037404	Symbol: SELL	Full name: selectin L	Gene type: protein-coding (Select the gene id to continue)
-3.  In the summary select from the "orthologs" => "all". https://www.ncbi.nlm.nih.gov/gene/100037404/
-4. Select the species of choice and their version of the gene. (Don't forget to download the "Genbank (Full)" and not just "Genbank".

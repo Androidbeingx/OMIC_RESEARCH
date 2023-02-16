@@ -80,22 +80,26 @@ nausea and headache.
 develop alcohol intolerance. Other factors such as general health, diet and the
 presence of other genes that affect alcohol metabolism may also play a role.)
 
-#### Conclusion ( TODO ! )
+#### Conclusion 
 The results of the alignment of the Alcohol dehydrogenase gene from different
 Drosophila species against the ADH1B gene from Homo sapiens show that the
 identity percentage ranges from 34.55% to 38.75%, with the highest identity
-found in Drosophila suzukii and the lowest in Drosophila yakuba. This indicates
-that the Alcohol dehydrogenase gene has evolved differently in each of these
-species. The gene product, chromosome, and gene locus are conserved across the
+found in Drosophila suzukii and the lowest in Drosophila yakuba. 
+
+This indicates that the Alcohol dehydrogenase gene has evolved differently in each 
+of thesespecies. The gene product, chromosome, and gene locus are conserved across the
 Drosophila species studied, except for Drosophila persimilis and Drosophila
-guanche, where the chromosome and gene locus are unknown. The alignment score
-results suggest that alcohol intolerance sickness could be caused by
+guanche, where the chromosome and gene locus are unknown. 
+
+The alignment score results suggest that alcohol intolerance sickness could be caused by
 differences in the activity or expression of the ADH1B gene in humans, rather
-than by differences in the Alcohol dehydrogenase gene in Drosophila. However,
-more research is needed to determine whether the differences in the Alcohol
+than by differences in the Alcohol dehydrogenase gene in Drosophila.
+However, more research is needed to determine whether the differences in the Alcohol
 dehydrogenase gene affect alcohol metabolism in Drosophila and if these
 differences could be used to develop treatments for alcohol intolerance
-sickness. Overall, the results of this study provide important insights into
+sickness.
+
+Overall, the results of this study provide important insights into
 the evolution and function of Alcohol dehydrogenase gene in different
 Drosophila species, and may have implications for understanding the genetic
 basis of alcohol metabolism in humans.
