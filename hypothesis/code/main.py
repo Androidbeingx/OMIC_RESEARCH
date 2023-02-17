@@ -266,7 +266,7 @@ def main() -> None:
     # ==============================================================================
 
     # Download the genbank and fasta files of each first result / query.
-    paths: list[str] = download_fasta_and_genbank(queries)
+    # paths: list[str] = download_fasta_and_genbank(queries)
 
     # Get file paths with the given extensions.
     fasta_paths: list[str] = get_files_with_extension(
