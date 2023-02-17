@@ -3,17 +3,20 @@ Module for downloading FASTA and Genbank files of the first result from querying
 
 Usage example:
     download_gene_files(
+        database="protein",
+        query='alcohol dehydrogenase[Protein Name] AND "Drosophila melanogaster"[Organism] AND refseq[filter]',
         email="majerdaniel93@gmail.com",
-        species="Drosophila melanogaster",
-        gene_full_name="alcohol dehydrogenase",
-        filter="mRNA",
+        output_dir="../data/genbanks-and-fastas",
+        file_name="alcohol_dehydrogenase-drosophila_melanogaster",
     )
 
 """
-
-from Bio import Entrez, SeqIO
-from typing import TypedDict, TextIO
 import os
+from typing import TextIO
+from typing import TypedDict
+
+from Bio import Entrez
+from Bio import SeqIO
 
 
 class SearchResult(TypedDict):
@@ -28,25 +31,30 @@ class SearchResult(TypedDict):
 
 def __save_efetch_result(
     output_dir: str, file_name: str, file_extension: str, content: TextIO
-) -> None:
+) -> str:
     """
     Creates the output directory if doesn't exists,
     then saves the content TextIO type content argument.
     """
 
     # Save the files to the local system
-    if not os.path.exists(output_dir):
-        os.mkdir(output_dir)
+    os.makedirs(output_dir, exist_ok=True)
+
+    file_path: str = os.path.join(
+        output_dir, f'{file_name}.{file_extension.lstrip(".")}'
+    )
 
     with open(
         os.path.join(output_dir, f'{file_name}.{file_extension.lstrip(".")}'), "w"
     ) as f:
         f.write(content.read())
 
+    return file_path
+
 
 def download_gene_files(
     database: str, query: str, email: str, output_dir: str, file_name: str
-) -> None:
+) -> tuple[str | None, str | None]:
     """
     This function downloads the FASTA and Genbank files of a given Gene and Species.
     """
@@ -60,25 +68,21 @@ def download_gene_files(
 
     # Check if there are any search results
     if int(search_results["Count"]) == 0:
-        print("No results found for the given gene and species.")
-        return
+        print("No results found for the given gene and species!")
+        return (None, None)
 
     # Fetch the first result and download the FASTA and Genbank files
-    gb_result = Entrez.efetch(
+    gb_result: TextIO = Entrez.efetch(
         db=database, id=search_results["IdList"][0], rettype="gb", retmode="text"
     )
 
-    # print(list(SeqIO.parse(gb_result, 'genbank'))[0].annotations)
-
-    fasta_result = Entrez.efetch(
+    fasta_result: TextIO = Entrez.efetch(
         db=database, id=search_results["IdList"][0], rettype="fasta", retmode="text"
     )
 
-    # Write genbank.
-    __save_efetch_result(output_dir, file_name, "gb", gb_result)
-
-    # Write fasta.
-    __save_efetch_result(output_dir, file_name, "fasta", fasta_result)
+    # Write genbank and fasta.
+    genbank_path: str = __save_efetch_result(output_dir, file_name, "gb", gb_result)
+    fasta_path: str = __save_efetch_result(output_dir, file_name, "fasta", fasta_result)
 
     print(
         f"""
@@ -86,6 +90,8 @@ Files for the following query has been successfully downloaded to the {output_di
 - {query}
         """
     )
+
+    return genbank_path, fasta_path
 
 
 if __name__ == "__main__":
@@ -95,6 +101,6 @@ if __name__ == "__main__":
         database="protein",
         query='alcohol dehydrogenase[Protein Name] AND "Drosophila melanogaster"[Organism] AND refseq[filter]',
         email="majerdaniel93@gmail.com",
-        output_dir="../data",
+        output_dir="../data/genbanks-and-fastas",
         file_name="alcohol_dehydrogenase-drosophila_melanogaster",
     )

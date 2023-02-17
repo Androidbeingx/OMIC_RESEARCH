@@ -103,15 +103,3 @@ Overall, the results of this study provide important insights into
 the evolution and function of Alcohol dehydrogenase gene in different
 Drosophila species, and may have implications for understanding the genetic
 basis of alcohol metabolism in humans.
-### References:
-
-- [Drosophila melanogaster ADH gene](https://www.ncbi.nlm.nih.gov/gene/3771877/)
-
-- [Drosophila melanogaster ADH gene orthologs](https://www.orthodb.org/?ncbi=6732347)
-(Note: the human ADH1B2 is not listed here, because it is a variant of it, which is orthologous too.)
-
-- [Orthologous gene in human is ADH1B](https://www.ncbi.nlm.nih.gov/gene/125/)
-
----
-
-
