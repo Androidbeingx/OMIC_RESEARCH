@@ -7,15 +7,16 @@ import re
 from typing import TypedDict
 
 import pandas as pd
-from Bio import SeqIO
-from Bio.SeqRecord import SeqRecord
-
 from aligments_fasta import AlignmentResults
 from aligments_fasta import use_blosum62_matrix
 from annotation_regexs import ANNOTATION_REGEXS
 from annotation_regexs import get_info_with_regex
+from Bio import SeqIO
+from Bio.SeqRecord import SeqRecord
 from download_ncbi_query import download_gene_files
-from phylo_tree import join_fasta_files, run_clustal, display_phylo_tree
+from phylo_tree import display_phylo_tree
+from phylo_tree import join_fasta_files
+from phylo_tree import run_clustal
 
 # Global types
 # ==============================
@@ -36,6 +37,7 @@ class AlignmentResultTable(TypedDict):
     definition: list[str]  # Gene definition
     score: list[float]  # Alignment score
     identity_percent: list[float]  # Alignment percent identity
+
 
 # ==============================
 
@@ -297,19 +299,24 @@ def main() -> None:
         .sort_values(by="score", ascending=False)
         .reset_index(drop=True)
     )
+
+    print(result_df)
+
     result_df_path: str = save_dataframe(
         "../data/csv", "alignment-results.csv", result_df
     )
 
     # Phylogenetic tree from the result!
     # ===========================
-    multi_fasta_path: str = join_fasta_files(fasta_paths, '../data/multi-fasta', 'multi-fasta.fasta')
+    multi_fasta_path: str = join_fasta_files(
+        fasta_paths, "../data/multi-fasta", "multi-fasta.fasta"
+    )
 
-    output_msa_path: str = '../data/multi-fasta/msa_result.clustal'
-    output_tree_path: str = '../data/multi-fasta/tree.dnd'
+    output_msa_path: str = "../data/multi-fasta/msa_result.clustal"
+    output_tree_path: str = "../data/multi-fasta/tree.dnd"
 
     run_clustal(multi_fasta_path, output_msa_path, output_tree_path)
-    display_phylo_tree(output_tree_path, 'newick')
+    display_phylo_tree(output_tree_path, "newick")
     # ===========================
 
 
