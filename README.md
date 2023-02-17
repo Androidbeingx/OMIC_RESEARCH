@@ -84,16 +84,19 @@ presence of other genes that affect alcohol metabolism may also play a role.)
 The results of the alignment of the Alcohol dehydrogenase gene from different
 Drosophila species against the ADH1B gene from Homo sapiens show that the
 identity percentage ranges from 34.55% to 38.75%, with the highest identity
-found in Drosophila suzukii and the lowest in Drosophila yakuba.
+found in Drosophila simulans and the lowest in Drosophila ananassae.
+
+These results indicate that although they have the same function, alcohol metabolism, 
+their structure is not comparable, resulting in these low scores.
+In addition, to be sure, we performed a phylogenetic tree to measure the degree of 
+differences between species.
+The result was that the human gene is far removed from Drosophila. This reaffirms the 
+results of the alignment study.
 
 This indicates that the Alcohol dehydrogenase gene has evolved differently in each
-of these species. The gene product, chromosome, and gene locus are conserved across the
-Drosophila species studied, except for Drosophila persimilis and Drosophila
-guanche, where the chromosome and gene locus are unknown.
+of these species. Although the gene product is the only mostly preserved across the
+Drosophila species studied.
 
-The alignment score results suggest that alcohol intolerance sickness could be caused by
-differences in the activity or expression of the ADH1B gene in humans, rather
-than by differences in the Alcohol dehydrogenase gene in Drosophila.
 However, more research is needed to determine whether the differences in the Alcohol
 dehydrogenase gene affect alcohol metabolism in Drosophila and if these
 differences could be used to develop treatments for alcohol intolerance
