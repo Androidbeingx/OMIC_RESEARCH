@@ -268,7 +268,7 @@ def main() -> None:
     # ==============================================================================
 
     # Download the genbank and fasta files of each first result / query.
-    # paths: list[str] = download_fasta_and_genbank(queries)
+    paths: list[str] = download_fasta_and_genbank(queries)
 
     # Get file paths with the given extensions.
     fasta_paths: list[str] = get_files_with_extension(
@@ -299,6 +299,9 @@ def main() -> None:
         .sort_values(by="score", ascending=False)
         .reset_index(drop=True)
     )
+
+    print(result_df)
+
     result_df_path: str = save_dataframe(
         "../data/csv", "alignment-results.csv", result_df
     )
