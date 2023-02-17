@@ -1,9 +1,12 @@
 import os
 import subprocess
+
 from Bio import Phylo
 
 
-def join_fasta_files(fasta_files: list[str] | tuple[str, ...], output_dir: str, file_name: str) -> str:
+def join_fasta_files(
+    fasta_files: list[str] | tuple[str, ...], output_dir: str, file_name: str
+) -> str:
     """
     Combine the contents of multiple input FASTA files into a single output file.
     """
@@ -31,16 +34,29 @@ def join_fasta_files(fasta_files: list[str] | tuple[str, ...], output_dir: str, 
     return output_file_path
 
 
-def run_clustal(input_file_path: str, output_msa_path: str, output_tree_path: str) -> None:
+def run_clustal(
+    input_file_path: str, output_msa_path: str, output_tree_path: str
+) -> None:
     """
     Run the Clustal Omega multiple sequence alignment tool on the specified input file.
     """
 
     try:
-        subprocess.run(['clustalo', '-i', input_file_path, '-o', output_msa_path, f'--guidetree-out={output_tree_path}'])
+        subprocess.run(
+            [
+                "clustalo",
+                "-i",
+                input_file_path,
+                "-o",
+                output_msa_path,
+                f"--guidetree-out={output_tree_path}",
+            ]
+        )
     except FileNotFoundError as err:
         print(err)
-        print('Could not execute Clustalo on the system. Please, check if it is intalled.')
+        print(
+            "Could not execute Clustalo on the system. Please, check if it is intalled."
+        )
 
 
 def display_phylo_tree(tree_path: str, format: str) -> None:
@@ -58,26 +74,29 @@ def main() -> None:
     "Example of usage"
 
     fasta_files = [
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_guanche.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_sechellia.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_simulans.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_ananassae.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-homo_sapiens.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_persimilis.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_teissieri.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_melanogaster.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_subobscura.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_yakuba.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_suzukii.fasta",
-    "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_erecta.fasta"
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_guanche.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_sechellia.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_simulans.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_ananassae.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-homo_sapiens.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_persimilis.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_teissieri.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_melanogaster.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_subobscura.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_yakuba.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_suzukii.fasta",
+        "../data/genbanks-and-fastas/alcohol_dehydrogenase-drosophila_erecta.fasta",
     ]
 
-    multi_fasta_path: str = join_fasta_files(fasta_files, '../data/multi-fasta', 'multi-fasta.fasta')
-    output_msa_path: str = '../data/multi-fasta/msa_result.clustal'
-    output_tree_path: str = '../data/multi-fasta/tree.dnd'
+    multi_fasta_path: str = join_fasta_files(
+        fasta_files, "../data/multi-fasta", "multi-fasta.fasta"
+    )
+    output_msa_path: str = "../data/multi-fasta/msa_result.clustal"
+    output_tree_path: str = "../data/multi-fasta/tree.dnd"
 
     run_clustal(multi_fasta_path, output_msa_path, output_tree_path)
-    display_phylo_tree(output_tree_path, 'newick')
+    display_phylo_tree(output_tree_path, "newick")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
